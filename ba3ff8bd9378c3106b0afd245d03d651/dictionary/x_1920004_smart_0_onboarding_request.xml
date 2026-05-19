@@ -31,6 +31,7 @@
                 <element inactive_on_update="false" label="Finance" sequence="2" value="Finance"/>
             </choice>
         </element>
+        <element label="temp" max_length="40" name="temp" type="string"/>
         <element display="true" label="Employee Name" max_length="40" name="employee_name" type="string"/>
         <element label="Employee Email" max_length="40" name="employee_email" type="string"/>
         <element label="New Field 1" max_length="40" name="new_field_1" type="string"/>
