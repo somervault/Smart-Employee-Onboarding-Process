@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="6e81c5f193b8c3106b0afd245d03d60b" label="Onboarding Request" max_length="40" name="x_1920004_smart_0_onboarding_request" type="collection">
         <element label="Manager" max_length="32" name="manager" reference="sys_user" type="reference"/>
-        <element choice="1" label="Location" max_length="255" name="location" type="choice">
+        <element choice="1" label="Location" mandatory="true" max_length="255" name="location" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Hyderabad" sequence="4" value="Hyderabad"/>
                 <element inactive_on_update="false" label="Banaglore" sequence="2" value="Bangalore"/>
@@ -10,7 +10,7 @@
                 <element inactive_on_update="false" label="Pune" sequence="1" value="Pune"/>
             </choice>
         </element>
-        <element choice="1" label="Status" max_length="255" name="status" type="choice">
+        <element choice="1" label="Status" mandatory="true" max_length="255" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Cancelled" sequence="6" value="Cancelled"/>
                 <element inactive_on_update="false" label="In Progress" sequence="4" value="In Progress"/>
@@ -21,7 +21,7 @@
                 <element inactive_on_update="false" label="Approved" sequence="3" value="Approved"/>
             </choice>
         </element>
-        <element choice="1" label="Department" max_length="255" name="department" type="choice">
+        <element choice="1" label="Department" mandatory="true" max_length="255" name="department" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Sales" sequence="3" value="Sales"/>
                 <element inactive_on_update="false" label="HR" sequence="1" value="HR"/>
@@ -32,10 +32,10 @@
             </choice>
         </element>
         <element label="temp" max_length="40" name="temp" type="string"/>
-        <element display="true" label="Employee Name" max_length="40" name="employee_name" type="string"/>
-        <element label="Employee Email" max_length="40" name="employee_email" type="string"/>
+        <element display="true" label="Employee Name" mandatory="true" max_length="40" name="employee_name" type="string"/>
+        <element label="Employee Email" mandatory="true" max_length="40" name="employee_email" type="string"/>
         <element label="New Field 1" max_length="40" name="new_field_1" type="string"/>
-        <element choice="1" label="Laptop Type" max_length="255" name="laptop_type" type="choice">
+        <element choice="1" label="Laptop Type" mandatory="true" max_length="255" name="laptop_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Linux" sequence="2" value="Linux"/>
                 <element inactive_on_update="false" label="MacBook" sequence="1" value="MacBook"/>
