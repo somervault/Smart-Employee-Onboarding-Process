@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Shows an info message when MacBook is selected as laptop type</description>
+        <field>laptop_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Show MacBook setup message</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    if (newValue == 'MacBook') {
+        g_form.addInfoMessage('MacBook setup task will be created automatically after submission.');
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:00:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>98b27d8693c5cf106b0afd245d03d6d2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Show MacBook setup message</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name>sys_script_client_98b27d8693c5cf106b0afd245d03d6d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:02:17</sys_updated_on>
+        <table>x_1920004_smart_0_onboarding_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</application>
+        <file_path/>
+        <instance_id>2b64c9c4ffe7fe1cc812f8e4fc4fd9a6</instance_id>
+        <instance_name>dev366006</instance_name>
+        <name>sys_script_client_98b27d8693c5cf106b0afd245d03d6d2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Shows an info message when MacBook is selected as laptop type&lt;/description&gt;&lt;field&gt;laptop_type&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Show MacBook setup message&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    if (newValue == 'MacBook') {
+        g_form.addInfoMessage('MacBook setup task will be created automatically after submission.');
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-25 20:00:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;98b27d8693c5cf106b0afd245d03d6d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Show MacBook setup message&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Employee Onboarding Portal"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_98b27d8693c5cf106b0afd245d03d6d2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-25 20:02:17&lt;/sys_updated_on&gt;&lt;table&gt;x_1920004_smart_0_onboarding_request&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1357312785</payload_hash>
+        <record_name>Show MacBook setup message</record_name>
+        <reverted_from/>
+        <source>21c9928893c583106b0afd245d03d6b3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:02:19</sys_created_on>
+        <sys_id>d0e6318e93c5cf106b0afd245d03d6d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e60bb28630000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:02:19</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>00e6318e9fc5cf10e4228fcd935c94d1</update_guid>
+        <update_guid_history>00e6318e9fc5cf10e4228fcd935c94d1:-1357312785,0d96f54eacc5cf109e6b7fd42aed6489:1103255684</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-26 03:26:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>26f961d7549c4ae0ae376a5602762240</sys_id>
+        <sys_metadata>98b27d8693c5cf106b0afd245d03d6d2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Show MacBook setup message</sys_name>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_parent display_value="Onboarding Request">6e81c5f193b8c3106b0afd245d03d60b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_scope_delete display_value="">2209f09ad1ac490c8732afa3724da710</sys_scope_delete>
+        <sys_update_name>sys_script_client_98b27d8693c5cf106b0afd245d03d6d2</sys_update_name>
+        <sys_update_version display_value="sys_script_client_98b27d8693c5cf106b0afd245d03d6d2">d0e6318e93c5cf106b0afd245d03d6d2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-26 03:26:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
