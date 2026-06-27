@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="job_role" table="x_1920004_smart_0_onboarding_request" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>job_role</element>
+            <name>x_1920004_smart_0_onboarding_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 20:26:44</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>job_role</sys_name>
+            <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+            <sys_update_name>sys_choice_x_1920004_smart_0_onboarding_request_job_role</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 20:26:44</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>job_role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Software Developer</label>
+            <language>en</language>
+            <name>x_1920004_smart_0_onboarding_request</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 20:26:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 20:26:44</sys_updated_on>
+            <value>software_developer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>job_role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>QA Engineer</label>
+            <language>en</language>
+            <name>x_1920004_smart_0_onboarding_request</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 20:26:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 20:26:44</sys_updated_on>
+            <value>qa_engineer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>job_role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DevOps Engineer</label>
+            <language>en</language>
+            <name>x_1920004_smart_0_onboarding_request</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 20:26:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 20:26:44</sys_updated_on>
+            <value>devops_engineer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>job_role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Data Scientist</label>
+            <language>en</language>
+            <name>x_1920004_smart_0_onboarding_request</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 20:26:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 20:26:45</sys_updated_on>
+            <value>data_scientist</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>job_role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UI/UX Designer</label>
+            <language>en</language>
+            <name>x_1920004_smart_0_onboarding_request</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 20:26:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 20:26:45</sys_updated_on>
+            <value>ui_ux_designer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>job_role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>HR Executive</label>
+            <language>en</language>
+            <name>x_1920004_smart_0_onboarding_request</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 20:26:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 20:26:45</sys_updated_on>
+            <value>hr_executive</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>job_role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Finance Executive</label>
+            <language>en</language>
+            <name>x_1920004_smart_0_onboarding_request</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 20:26:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 20:26:46</sys_updated_on>
+            <value>finance_executive</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>job_role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Network Engineer</label>
+            <language>en</language>
+            <name>x_1920004_smart_0_onboarding_request</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 20:26:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 20:26:46</sys_updated_on>
+            <value>network_engineer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>job_role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Intern</label>
+            <language>en</language>
+            <name>x_1920004_smart_0_onboarding_request</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 20:26:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 20:26:47</sys_updated_on>
+            <value>intern</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
