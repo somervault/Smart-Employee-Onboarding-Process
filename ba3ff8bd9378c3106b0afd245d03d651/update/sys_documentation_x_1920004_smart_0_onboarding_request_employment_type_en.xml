@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="new_field_1" label="New Field 1" language="en" table="x_1920004_smart_0_onboarding_request">
+    <sys_documentation element="employment_type" label="Employment Type" language="en" table="x_1920004_smart_0_onboarding_request">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>new_field_1</element>
+            <element>employment_type</element>
             <help/>
             <hint/>
-            <label>New Field 1</label>
+            <label>Employment Type</label>
             <language>en</language>
             <name>x_1920004_smart_0_onboarding_request</name>
             <plural/>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-16 20:02:32</sys_created_on>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_name>New Field 1</sys_name>
+            <sys_created_on>2026-06-27 19:46:41</sys_created_on>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_name>Employment Type</sys_name>
             <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
             <sys_policy/>
             <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
-            <sys_update_name>sys_documentation_x_1920004_smart_0_onboarding_request_new_field_1_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_1920004_smart_0_onboarding_request_employment_type_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-16 20:02:45</sys_updated_on>
+            <sys_updated_on>2026-06-27 20:11:20</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
