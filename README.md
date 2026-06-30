@@ -218,30 +218,48 @@ Planned
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
+```text
 Smart Employee Onboarding Portal
-
-├── Custom Tables
+│
+├── 📁 Data Model
 │   ├── Onboarding Request
 │   └── Onboarding Task
 │
-├── Security
-│   ├── Admin
-│   ├── Manager
-│   └── User
+├── 👥 Security
+│   ├── Admin Role
+│   ├── Manager Role
+│   ├── User Role
+│   └── Access Control Lists (ACLs)
 │
-├── Service Catalog
-│   └── Employee Onboarding Record Producer
+├── 📋 Request Management
+│   ├── Employee Onboarding Record Producer
+│   ├── Employee Details (Variable Set)
+│   ├── Employment Details (Variable Set)
+│   ├── Asset Requirements (Variable Set)
+│   └── Additional Information (Variable Set)
 │
-├── Variable Sets
-│   ├── Employee Details
-│   ├── Employment Details
-│   ├── Asset Requirements
-│   └── Additional Information
+├── ⚡ Client-side Logic
+│   ├── Catalog Client Scripts
+│   │   ├── Department → Job Role Filtering
+│   │   └── Dynamic Job Role Population
+│   │
+│   └── Catalog UI Policies
+│       └── Show/Hide Laptop Type
 │
-├── Client Scripts
-│   └── Department → Job Role Filtering
+├── 🔄 Workflow Automation (Upcoming)
+│   ├── Flow Designer
+│   ├── HR Approval
+│   ├── Automatic Task Creation
+│   ├── Conditional Task Assignment
+│   ├── Status Management
+│   └── Notifications
+│
+└── 📊 Analytics (Planned)
+    ├── Reports
+    └── Dashboard
+```
 │
 ├── UI Policies
 │   └── Laptop Required → Laptop Type
