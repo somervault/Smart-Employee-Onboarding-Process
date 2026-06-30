@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:1dec30a5933d43946b0afd245d03d67b</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>false</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-30 18:06:35</sys_created_on>
+        <sys_id>cca5fe6193f583946b0afd245d03d655</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>laptop_type</sys_name>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_cca5fe6193f583946b0afd245d03d655</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-30 18:06:35</sys_updated_on>
+        <table/>
+        <ui_policy display_value="show laptop type">1dd276a993b583946b0afd245d03d604</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>laptop_type</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=cca5fe6193f583946b0afd245d03d655"/>
+</record_update>

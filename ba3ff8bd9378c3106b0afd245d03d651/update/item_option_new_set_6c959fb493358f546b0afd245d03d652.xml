@@ -13,17 +13,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-28 12:32:01</sys_created_on>
         <sys_id>6c959fb493358f546b0afd245d03d652</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Employee Details</sys_name>
         <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
         <sys_update_name>item_option_new_set_6c959fb493358f546b0afd245d03d652</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-28 12:32:01</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-06-30 17:32:30</sys_updated_on>
         <title>Employee Details</title>
         <type>one_to_one</type>
-        <version/>
+        <version>7</version>
         <write_roles/>
     </item_option_new_set>
 </record_update>
