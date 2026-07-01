@@ -2,7 +2,7 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>true</active>
+        <active>false</active>
         <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=52411000,viewActivatedIn=naturalLanguage</attributes>
@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a7106f8e938103506b0afd245d03d623</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Update request status to completed</sys_name>
         <sys_overrides/>
         <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
@@ -45,11 +45,11 @@
         <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
         <sys_update_name>sys_hub_flow_a7106f8e938103506b0afd245d03d623</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-26 18:16:40</sys_updated_on>
+        <sys_updated_on>2026-07-01 18:37:31</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>4b682eda93c543506b0afd245d03d6bf</version_record>
+        <version_record>ce76004a937507946b0afd245d03d6a1</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=a7106f8e938103506b0afd245d03d623"/>
     <sys_variable_value action="delete_multiple" query="document_key=a7106f8e938103506b0afd245d03d623"/>
@@ -82,7 +82,7 @@
         <trigger_definition/>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
         <identifier>a7106f8e938103506b0afd245d03d623</identifier>
         <identifier_type>flow</identifier_type>
@@ -90,9 +90,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-26 18:16:37</sys_created_on>
         <sys_id>7548e6da93c543506b0afd245d03d6ec</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-26 18:16:38</sys_updated_on>
+        <sys_updated_on>2026-07-01 18:38:00</sys_updated_on>
         <trigger display_value="">ad48e6da93c543506b0afd245d03d6ea</trigger>
     </sys_trigger_runner_mapping>
     <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a7106f8e938103506b0afd245d03d623^sys_idNOT IN7548e6da93c543506b0afd245d03d6ec"/>
