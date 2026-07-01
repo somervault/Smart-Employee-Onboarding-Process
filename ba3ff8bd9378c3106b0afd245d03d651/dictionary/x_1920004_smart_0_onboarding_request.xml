@@ -15,10 +15,12 @@
         </element>
         <element choice="1" label="Status" mandatory="true" max_length="255" name="status" type="choice">
             <choice>
-                <element inactive_on_update="false" label="In Progress" sequence="0" value="In Progress"/>
-                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
-                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
-                <element inactive_on_update="false" label="Completed" sequence="2" value="Completed"/>
+                <element inactive_on_update="false" label="Pending HR Approval" sequence="1" value="Pending HR Approval"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="Approved"/>
+                <element inactive_on_update="false" label="Task Provisioning" sequence="3" value="Task Provisioning"/>
+                <element inactive_on_update="false" label="Onboarding in Progress" sequence="4" value="Onboarding in Progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="5" value="Completed"/>
+                <element inactive_on_update="false" label="Request Submitted" sequence="0" value="Request Submitted"/>
             </choice>
         </element>
         <element choice="1" label="Employment Type" max_length="40" name="employment_type" type="choice">
