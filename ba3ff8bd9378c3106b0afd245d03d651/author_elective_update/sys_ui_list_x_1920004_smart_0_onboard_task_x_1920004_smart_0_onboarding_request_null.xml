@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="x_1920004_smart_0_onboarding_request" relationship="" sys_domain="global" table="x_1920004_smart_0_onboard_task" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>2525ee5293c543506b0afd245d03d66c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>task_name</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>a125ee5293c543506b0afd245d03d66d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>2925ee5293c543506b0afd245d03d66d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>ad25ee5293c543506b0afd245d03d66d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>parent_request</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>b1252e5693c543506b0afd245d03d629</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>39252e5693c543506b0afd245d03d629</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1920004_smart_0_onboard_task</name>
+            <parent>x_1920004_smart_0_onboarding_request</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6925ee5293c543506b0afd245d03d66a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1920004_smart_0_onboard_task</sys_name>
+            <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+            <sys_update_name>sys_ui_list_x_1920004_smart_0_onboard_task_x_1920004_smart_0_onboarding_request_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:57</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</application>
+        <file_path/>
+        <instance_id>1c2e1dba3ba5cb18986d048aa4e45a44</instance_id>
+        <instance_name>dev411871</instance_name>
+        <name>sys_ui_list_x_1920004_smart_0_onboard_task_x_1920004_smart_0_onboarding_request_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="x_1920004_smart_0_onboarding_request" relationship="" sys_domain="global" table="x_1920004_smart_0_onboard_task" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>2525ee5293c543506b0afd245d03d66c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>task_name</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>a125ee5293c543506b0afd245d03d66d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>2925ee5293c543506b0afd245d03d66d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>ad25ee5293c543506b0afd245d03d66d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>parent_request</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>b1252e5693c543506b0afd245d03d629</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_1920004_smart_0_onboard_task" element="NULL" name="x_1920004_smart_0_onboard_task" parent="x_1920004_smart_0_onboarding_request" relationship="NULL" sys_domain="global" view="Default view">6925ee5293c543506b0afd245d03d66a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:58</sys_created_on>
+            <sys_id>39252e5693c543506b0afd245d03d629</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1920004_smart_0_onboard_task</name>
+            <parent>x_1920004_smart_0_onboarding_request</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-26 18:02:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6925ee5293c543506b0afd245d03d66a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1920004_smart_0_onboard_task</sys_name>
+            <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+            <sys_update_name>sys_ui_list_x_1920004_smart_0_onboard_task_x_1920004_smart_0_onboarding_request_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-26 18:02:57</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>]]></payload>
+        <payload_hash>-1554137766</payload_hash>
+        <record_name>Onboarding Request.Onboarding Task</record_name>
+        <reverted_from/>
+        <source>0fcebb28c30e4710801139ec050131a2</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-10 07:08:18</sys_created_on>
+        <sys_id>aedef368c30e4710801139ec05013157</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f4adb11a90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-10 07:08:18</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>6edef368cc0e4710885cfc1738e7ce57</update_guid>
+        <update_guid_history>6edef368cc0e4710885cfc1738e7ce57:-1554137766</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-10 07:37:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>1dc0bff0b828409385923298a17e5ac9</sys_id>
+        <sys_metadata>6925ee5293c543506b0afd245d03d66a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1920004_smart_0_onboard_task</sys_name>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_parent display_value="">5616e70f9370cf106b0afd245d03d633</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_scope_delete display_value="">2209f09ad1ac490c8732afa3724da710</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_1920004_smart_0_onboard_task_x_1920004_smart_0_onboarding_request_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_1920004_smart_0_onboard_task_x_1920004_smart_0_onboarding_request_null">aedef368c30e4710801139ec05013157</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-10 07:37:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
