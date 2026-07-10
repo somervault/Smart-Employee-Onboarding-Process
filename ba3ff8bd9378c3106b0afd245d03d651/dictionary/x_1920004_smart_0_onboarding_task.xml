@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="3f564878c34e4710801139ec050131ee" extends="task" label="Onboarding Task" max_length="40" name="x_1920004_smart_0_onboarding_task" type="collection"/>
+</database>

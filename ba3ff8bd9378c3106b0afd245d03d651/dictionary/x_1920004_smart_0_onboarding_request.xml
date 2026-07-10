@@ -1,81 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="6e81c5f193b8c3106b0afd245d03d60b" label="Onboarding Request" max_length="40" name="x_1920004_smart_0_onboarding_request" type="collection">
-        <element label="Employee ID" max_length="40" name="employee_id" type="string"/>
-        <element label="Completion Date" max_length="255" name="completion_date" type="glide_date_time"/>
         <element label="Requested By" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <element label="Rejection Reason" max_length="40" name="rejection_reason" type="string"/>
+        <element label="Remarks" max_length="40" name="remarks" type="journal_input"/>
+        <element label="Joining Date" max_length="255" name="joining_date" type="glide_date"/>
+        <element label="Risk Score" max_length="255" name="risk_score" type="integer"/>
         <element label="Manager" max_length="32" name="manager" reference="sys_user" type="reference"/>
-        <element choice="1" label="Location" mandatory="true" max_length="255" name="location" type="choice">
+        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Hyderabad" sequence="4" value="Hyderabad"/>
-                <element inactive_on_update="false" label="Banaglore" sequence="2" value="Bangalore"/>
-                <element inactive_on_update="false" label="Mumbai" sequence="0" value="Mumbai"/>
-                <element inactive_on_update="false" label="Remote" sequence="3" value="Remote"/>
-                <element inactive_on_update="false" label="Pune" sequence="1" value="Pune"/>
+                <element inactive_on_update="false" label="High" sequence="0" value="high"/>
+                <element inactive_on_update="false" label="Low" sequence="2" value="low"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
             </choice>
         </element>
+        <element label="Employee Email" mandatory="true" max_length="40" name="employee_email" type="string"/>
+        <element label="Overall Due Date" max_length="255" name="overall_due_date" type="due_date"/>
+        <element label="Progress" max_length="40" name="progress" type="integer"/>
+        <element label="Employee ID" max_length="40" name="employee_id" type="string"/>
         <element choice="1" label="Status" mandatory="true" max_length="255" name="status" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Pending HR Approval" sequence="1" value="Pending HR Approval"/>
-                <element inactive_on_update="false" label="Approved" sequence="2" value="Approved"/>
-                <element inactive_on_update="false" label="Task Provisioning" sequence="3" value="Task Provisioning"/>
-                <element inactive_on_update="false" label="Onboarding in Progress" sequence="4" value="Onboarding in Progress"/>
-                <element inactive_on_update="false" label="Completed" sequence="5" value="Completed"/>
                 <element inactive_on_update="false" label="Request Submitted" sequence="0" value="Request Submitted"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="Approved"/>
+                <element inactive_on_update="false" label="Onboarding in Progress" sequence="4" value="Onboarding in Progress"/>
+                <element inactive_on_update="false" label="Rejected" sequence="6" value="Rejected"/>
+                <element inactive_on_update="false" label="Completed" sequence="5" value="Completed"/>
+                <element inactive_on_update="false" label="Pending HR Approval" sequence="1" value="Pending HR Approval"/>
+                <element inactive_on_update="false" label="Task Provisioning" sequence="3" value="Task Provisioning"/>
             </choice>
         </element>
+        <element choice="1" label="Location" mandatory="true" max_length="255" name="location" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pune" sequence="1" value="Pune"/>
+                <element inactive_on_update="false" label="Remote" sequence="3" value="Remote"/>
+                <element inactive_on_update="false" label="Mumbai" sequence="0" value="Mumbai"/>
+                <element inactive_on_update="false" label="Banaglore" sequence="2" value="Bangalore"/>
+                <element inactive_on_update="false" label="Hyderabad" sequence="4" value="Hyderabad"/>
+            </choice>
+        </element>
+        <element choice="1" label="Department" mandatory="true" max_length="255" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="IT" sequence="0" value="IT"/>
+                <element inactive_on_update="false" label="Finance" sequence="2" value="Finance"/>
+                <element inactive_on_update="false" label="Sales" sequence="3" value="Sales"/>
+                <element inactive_on_update="false" label="Operations" sequence="5" value="Operations"/>
+                <element inactive_on_update="false" label="HR" sequence="1" value="HR"/>
+                <element inactive_on_update="false" label="Marketing" sequence="4" value="Marketing"/>
+            </choice>
+        </element>
+        <element display="true" label="Employee Name" mandatory="true" max_length="40" name="employee_name" type="string"/>
+        <element choice="1" label="Current Stage" max_length="40" name="current_stage" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="IT Setup" sequence="3" value="it_setup"/>
+                <element inactive_on_update="false" label="Rejected" sequence="5" value="rejected"/>
+                <element inactive_on_update="false" label="Manager Approval" sequence="1" value="manager_approval"/>
+                <element inactive_on_update="false" label="Submitted" sequence="0" value="submitted"/>
+                <element inactive_on_update="false" label="HR Approval" sequence="2" value="hr_approval"/>
+                <element inactive_on_update="false" label="Completed" sequence="4" value="completed"/>
+            </choice>
+        </element>
+        <element choice="1" label="Job Role" max_length="40" name="job_role" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Network Engineer" sequence="7" value="network_engineer"/>
+                <element inactive_on_update="false" label="QA Engineer" sequence="1" value="qa_engineer"/>
+                <element inactive_on_update="false" label="Data Scientist" sequence="3" value="data_scientist"/>
+                <element inactive_on_update="false" label="HR Executive" sequence="5" value="hr_executive"/>
+                <element inactive_on_update="false" label="UI/UX Designer" sequence="4" value="ui_ux_designer"/>
+                <element inactive_on_update="false" label="Finance Executive" sequence="6" value="finance_executive"/>
+                <element inactive_on_update="false" label="Software Developer" sequence="0" value="software_developer"/>
+                <element inactive_on_update="false" label="Intern" sequence="8" value="intern"/>
+                <element inactive_on_update="false" label="DevOps Engineer" sequence="2" value="devops_engineer"/>
+            </choice>
+        </element>
+        <element label="Completion Date" max_length="255" name="completion_date" type="glide_date_time"/>
         <element choice="1" label="Employment Type" max_length="40" name="employment_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Intern" sequence="1" value="intern"/>
                 <element inactive_on_update="false" label="Full Time" sequence="0" value="full_time"/>
                 <element inactive_on_update="false" label="Contract" sequence="2" value="contract"/>
-            </choice>
-        </element>
-        <element label="Rejection Reason" max_length="40" name="rejection_reason" type="string"/>
-        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
-                <element inactive_on_update="false" label="Low" sequence="2" value="low"/>
-                <element inactive_on_update="false" label="High" sequence="0" value="high"/>
-            </choice>
-        </element>
-        <element choice="1" label="Department" mandatory="true" max_length="255" name="department" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Sales" sequence="3" value="Sales"/>
-                <element inactive_on_update="false" label="HR" sequence="1" value="HR"/>
-                <element inactive_on_update="false" label="Operations" sequence="5" value="Operations"/>
-                <element inactive_on_update="false" label="IT" sequence="0" value="IT"/>
-                <element inactive_on_update="false" label="Marketing" sequence="4" value="Marketing"/>
-                <element inactive_on_update="false" label="Finance" sequence="2" value="Finance"/>
-            </choice>
-        </element>
-        <element display="true" label="Employee Name" mandatory="true" max_length="40" name="employee_name" type="string"/>
-        <element label="Remarks" max_length="40" name="remarks" type="journal_input"/>
-        <element label="Employee Email" mandatory="true" max_length="40" name="employee_email" type="string"/>
-        <element label="Overall Due Date" max_length="255" name="overall_due_date" type="due_date"/>
-        <element choice="1" label="Current Stage" max_length="40" name="current_stage" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="IT Setup" sequence="3" value="it_setup"/>
-                <element inactive_on_update="false" label="Completed" sequence="4" value="completed"/>
-                <element inactive_on_update="false" label="Submitted" sequence="0" value="submitted"/>
-                <element inactive_on_update="false" label="Manager Approval" sequence="1" value="manager_approval"/>
-                <element inactive_on_update="false" label="Rejected" sequence="5" value="rejected"/>
-                <element inactive_on_update="false" label="HR Approval" sequence="2" value="hr_approval"/>
-            </choice>
-        </element>
-        <element label="Joining Date" max_length="255" name="joining_date" type="glide_date"/>
-        <element label="Risk Score" max_length="255" name="risk_score" type="integer"/>
-        <element label="Progress" max_length="40" name="progress" type="integer"/>
-        <element choice="1" label="Job Role" max_length="40" name="job_role" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="UI/UX Designer" sequence="4" value="ui_ux_designer"/>
-                <element inactive_on_update="false" label="Intern" sequence="8" value="intern"/>
-                <element inactive_on_update="false" label="HR Executive" sequence="5" value="hr_executive"/>
-                <element inactive_on_update="false" label="QA Engineer" sequence="1" value="qa_engineer"/>
-                <element inactive_on_update="false" label="Finance Executive" sequence="6" value="finance_executive"/>
-                <element inactive_on_update="false" label="Software Developer" sequence="0" value="software_developer"/>
-                <element inactive_on_update="false" label="DevOps Engineer" sequence="2" value="devops_engineer"/>
-                <element inactive_on_update="false" label="Network Engineer" sequence="7" value="network_engineer"/>
-                <element inactive_on_update="false" label="Data Scientist" sequence="3" value="data_scientist"/>
             </choice>
         </element>
         <index name="index">
