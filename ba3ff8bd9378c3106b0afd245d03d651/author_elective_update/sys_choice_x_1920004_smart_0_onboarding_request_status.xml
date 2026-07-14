@@ -77,37 +77,18 @@
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Task Provisioning</label>
+            <label>Onboarding in Progress</label>
             <language>en</language>
             <name>x_1920004_smart_0_onboarding_request</name>
             <sequence>3</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-01 10:23:50</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-01 10:23:50</sys_updated_on>
-            <value>Task Provisioning</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>status</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Onboarding in Progress</label>
-            <language>en</language>
-            <name>x_1920004_smart_0_onboarding_request</name>
-            <sequence>4</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
             <sys_created_on>2026-07-01 10:23:51</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-01 10:23:51</sys_updated_on>
+            <sys_updated_on>2026-07-14 18:48:56</sys_updated_on>
             <value>Onboarding in Progress</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -118,15 +99,15 @@
             <label>Completed</label>
             <language>en</language>
             <name>x_1920004_smart_0_onboarding_request</name>
-            <sequence>5</sequence>
+            <sequence>4</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2026-05-16 20:18:21</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-01 10:23:52</sys_updated_on>
+            <sys_updated_on>2026-07-14 18:48:56</sys_updated_on>
             <value>Completed</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -137,15 +118,15 @@
             <label>Rejected</label>
             <language>en</language>
             <name>x_1920004_smart_0_onboarding_request</name>
-            <sequence>6</sequence>
+            <sequence>5</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2026-07-10 09:20:08</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-10 09:20:08</sys_updated_on>
+            <sys_updated_on>2026-07-14 18:48:56</sys_updated_on>
             <value>Rejected</value>
         </sys_choice>
     </sys_choice>

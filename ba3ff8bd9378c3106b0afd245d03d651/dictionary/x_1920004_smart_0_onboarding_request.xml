@@ -21,11 +21,10 @@
             <choice>
                 <element inactive_on_update="false" label="Request Submitted" sequence="0" value="Request Submitted"/>
                 <element inactive_on_update="false" label="Approved" sequence="2" value="Approved"/>
-                <element inactive_on_update="false" label="Onboarding in Progress" sequence="4" value="Onboarding in Progress"/>
-                <element inactive_on_update="false" label="Rejected" sequence="6" value="Rejected"/>
-                <element inactive_on_update="false" label="Completed" sequence="5" value="Completed"/>
+                <element inactive_on_update="false" label="Onboarding in Progress" sequence="3" value="Onboarding in Progress"/>
+                <element inactive_on_update="false" label="Rejected" sequence="5" value="Rejected"/>
+                <element inactive_on_update="false" label="Completed" sequence="4" value="Completed"/>
                 <element inactive_on_update="false" label="Pending HR Approval" sequence="1" value="Pending HR Approval"/>
-                <element inactive_on_update="false" label="Task Provisioning" sequence="3" value="Task Provisioning"/>
             </choice>
         </element>
         <element choice="1" label="Location" mandatory="true" max_length="255" name="location" type="choice">
