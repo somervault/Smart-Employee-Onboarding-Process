@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=90832000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Creates onboarding tasks dynamically from active templates.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>provision_onboarding_tasks</internal_name>
+        <label_cache>[{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item.template_name","label":"2 - For Each➛Onboarding Task Template Record➛Task Name","reference":"","reference_display":"Task Name","type":"string","base_type":"string","parent_table_name":"x_1920004_smart_0_onboarding_task_template","column_name":"template_name","choices":[{"order":0.0}],"usedInstances":{"97633d2c-1591-4682-80d8-6244842f8cbd":["short_description"]}},{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item.assignment_group","label":"2 - For Each➛Onboarding Task Template Record➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1920004_smart_0_onboarding_task_template","column_name":"assignment_group","choices":[{"order":0.0}],"usedInstances":{"97633d2c-1591-4682-80d8-6244842f8cbd":["assignment_group"]}},{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item","label":"2 - For Each➛Onboarding Task Template Record","reference":"x_1920004_smart_0_onboarding_task_template","reference_display":"Onboarding Task Template","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9086d71f-4a75-4ef0-8d45-01272ea324bf.Records","label":"1 - Look Up Records➛Onboarding Task Template Records","reference":"x_1920004_smart_0_onboarding_task_template","reference_display":"Onboarding Task Template","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>3c0bdfd5c3c6cb10801139ec05013147</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Provision Onboarding Tasks</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-11 11:13:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8d80ce85c30e0b10801139ec050131af</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Provision Onboarding Tasks</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name>sys_hub_flow_8d80ce85c30e0b10801139ec050131af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:38:03</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>5e7d535dc3c6cb10801139ec050131f2</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=8d80ce85c30e0b10801139ec050131af"/>
+    <sys_variable_value action="DELETE" query="document_key=8d80ce85c30e0b10801139ec050131af"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=8d80ce85c30e0b10801139ec050131af"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=8d80ce85c30e0b10801139ec050131af^sys_idNOT IN4580ce85c30e0b10801139ec050131b1"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>8d80ce85c30e0b10801139ec050131af</id>
+        <name>Provision Onboarding Tasks</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-11 11:13:17</sys_created_on>
+        <sys_id>4580ce85c30e0b10801139ec050131b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-11 11:13:17</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=4580ce85c30e0b10801139ec050131b1"/>
+    <sys_hub_flow_input action="DELETE" query="model=8d80ce85c30e0b10801139ec050131af^sys_idNOT INd0dc1fd9c3c6cb10801139ec050131ae"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=record_hierarchy_path,uiUniqueId=6258af40-df34-4dc7-8a0a-eee5ec7143a6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>onboarding_request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">record_hierarchy_path</internal_type>
+        <label>Onboarding Request</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Provision Onboarding Tasks">8d80ce85c30e0b10801139ec050131af</model>
+        <model_id>8d80ce85c30e0b10801139ec050131af</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8d80ce85c30e0b10801139ec050131af</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:35:02</sys_created_on>
+        <sys_id>d0dc1fd9c3c6cb10801139ec050131ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:35:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=d0dc1fd9c3c6cb10801139ec050131ae"/>
+    <sys_hub_flow_output action="DELETE" query="model=8d80ce85c30e0b10801139ec050131af"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=8d80ce85c30e0b10801139ec050131af"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=8d80ce85c30e0b10801139ec050131af"/>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=8d80ce85c30e0b10801139ec050131af^sys_idNOT IN1769c60dc34e0b10801139ec050131e7"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Provision Onboarding Tasks">8d80ce85c30e0b10801139ec050131af</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-11 11:52:13</sys_created_on>
+        <sys_id>1769c60dc34e0b10801139ec050131e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:27:09</sys_updated_on>
+        <ui_id>9086d71f-4a75-4ef0-8d45-01272ea324bf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VXS0/jMBD+K1HOUeW0pTxuCIS0B6gEFRcWWU7ithaOnbWdPkD89x3HcVpKgNLt7sKtHs/jm5lvJu7dU8iy8CQ8GvcRIvHB0SFCvR5Cg0EvJXGS9AZpgpJ+EkahIDkFTUMSTuE4I7y05wWOj7sIoT7WOVEGIyxFIonKmJhgQ/QDNjQvODHWKGMafi5va9thoxmMQDMYrTTTKeOZoiI8ubuPwoIoiG6oCk+eNq7MsqCYk4RycDiy4IIrizTaOrEXxq8TtQH8EQvnWqrMYkFRSBeGioxCqDHhmkZhTkRGjFTLRqIoyYaCrwRTJgx4DK3yQrNHcH+ErN6YQlopdXfNEddVc+J0KllKh4VhUjiJA+ouJS9zceUSsPWmY1Jy4+sNklKDP1pYzBZEjWh8M5Xzax/wgokqvfqSy5Tw5kSMUSwpDdW2F5TTHBzhnBSFbXih5IxVxoAl70w4HDpjLucQVLOJ6JDUAu9AiUjnAuTnlfiWKGazuAQ3YAyAGIduY1d0LUtVVWWGU17q6kIRoZ2v8LmqFf5VWpQu6zo/7EoECjpVrDCnYDCjdSrP0VbcP0ArSqRSZMzG1GsDQCqnP0swzowqW2jeorEbvc/W42+LvdW4LaGa6C9kNdHjvREd4P4nqtvKfzmmf8Rdl/AHBE4P3yXBwarfWsKGdpVbY7Br8ivaevFuXL1glGcvVvEWML3x0IYOkuVbyGuqjm2MjZ3c/fY7+UsSFQBl2NWbCc5E9Um0u2wvDEbvr7HjDR5U7V/xt5IRnbZs3sDI4HH3fVv11fN3C5De8AYQBSOHsgW437TefU3d3t6o2+t+jrpAnLunBn1TtZYC+5ePbZ3Xf7T6ZFMf2LVmED/fN9Q/2y1m/NmYXRtzYzZ7nxrOdWa5m/M3CLbnd9Ubwxb9zemegmkdD7thxXOWTahZRfdamTRzwh/a7mt2NTNUpffHb7T+u7M3iFdzBjOAFdXQqvVHWgzPjtfrIY6ceLft8EMYOqmKty1Eb3lJFsF1g7EVeL0iWBOj5nR/jy+xf/F584VvnR5f/2/xp2RXCt//BriHfb9kDwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=1769c60dc34e0b10801139ec050131e7"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=8d80ce85c30e0b10801139ec050131af"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=8d80ce85c30e0b10801139ec050131af^sys_idNOT INf41a0a0dc34e0b10801139ec05013158"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">341a0a0dc34e0b10801139ec05013157</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Provision Onboarding Tasks">8d80ce85c30e0b10801139ec050131af</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-11 11:55:03</sys_created_on>
+        <sys_id>f41a0a0dc34e0b10801139ec05013158</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:27:09</sys_updated_on>
+        <ui_id>3fd7908c-5e95-4a0a-9f06-68a8fa30eab2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51Sy27jMAz8F50Tw6/mdSuwKNBDt0Bb9FIUBi3RiVBZ0kpyUtfwv5eKneyixz3ZHJLDGZEDM12wXfAv5tZ7udds9/a+YFJHjP4HpqFFtmMyYOvZgh1BdTEehm26WYl11ixLWN8sS2zS5UaUN8s0y9c5QpGXdZM8ITdO+HGkViG9VdC//j8DP0glHM4iLTjSFtCx3fAjFXqLlYIaFQ2aGahfCgqzrWi2WbrlRb4q8jTNN2VWr4o6y0UBKFZUd+m8n03/eIPITqG78tInqsjTBcPPgFogDWpAeVywFrSAYFzPdsF1BDgE8ahVf604SB2IjsXaTy+/iDtL01jYIDniOCWvYTU/5ATzg5EcH22QRk9IgFrNPdyortW/J/lxBdhAp8JlBYR0nvjQRs1RxSypeT6Y09Nl4J3UZ39zUhkO6hpBCE7WXUAf14AKWyKqWrBW6n1lnTnKczNpaZO9oiBplDnR0HhuCfAoPKEnguSO8F9n+BWcjC4eiIaax7P76k8X504+ZsXVZJoKPHfShluiO+IsbnyP9zox+ekwBHLpaeBLxO4vVx4TPS1Z8n+hk3EfUepfbPwGOTTDPy8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=8d80ce85c30e0b10801139ec050131af"/>
+    <sys_hub_flow_variable action="DELETE" query="model=8d80ce85c30e0b10801139ec050131af"/>
+    <sys_documentation action="DELETE">
+        <element>onboarding_request</element>
+        <help/>
+        <hint/>
+        <label>Onboarding Request</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8d80ce85c30e0b10801139ec050131af</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:35:02</sys_created_on>
+        <sys_id>dcdc1fd9c3c6cb10801139ec050131b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:35:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_8d80ce85c30e0b10801139ec050131af"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_8d80ce85c30e0b10801139ec050131af"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Creates onboarding tasks dynamically from active templates.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>provision_onboarding_tasks</internal_name>
+        <label_cache>[{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item.template_name","label":"2 - For Each➛Onboarding Task Template Record➛Task Name","reference":"","reference_display":"Task Name","type":"string","base_type":"string","parent_table_name":"x_1920004_smart_0_onboarding_task_template","column_name":"template_name","choices":[{"order":0.0}],"usedInstances":{"97633d2c-1591-4682-80d8-6244842f8cbd":["short_description"]}},{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item.assignment_group","label":"2 - For Each➛Onboarding Task Template Record➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1920004_smart_0_onboarding_task_template","column_name":"assignment_group","choices":[{"order":0.0}],"usedInstances":{"97633d2c-1591-4682-80d8-6244842f8cbd":["assignment_group"]}},{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item","label":"2 - For Each➛Onboarding Task Template Record","reference":"x_1920004_smart_0_onboarding_task_template","reference_display":"Onboarding Task Template","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9086d71f-4a75-4ef0-8d45-01272ea324bf.Records","label":"1 - Look Up Records➛Onboarding Task Template Records","reference":"x_1920004_smart_0_onboarding_task_template","reference_display":"Onboarding Task Template","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Provision Onboarding Tasks</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Provision Onboarding Tasks">8d80ce85c30e0b10801139ec050131af</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:27:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3c0bdfd5c3c6cb10801139ec05013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:27:09</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=3c0bdfd5c3c6cb10801139ec05013147"/>
+    <sys_variable_value action="DELETE" query="document_key=3c0bdfd5c3c6cb10801139ec05013147"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=3c0bdfd5c3c6cb10801139ec05013147"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=3c0bdfd5c3c6cb10801139ec05013147^sys_idNOT INf00bdfd5c3c6cb10801139ec05013149"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>3c0bdfd5c3c6cb10801139ec05013147</id>
+        <name>Provision Onboarding Tasks</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:27:09</sys_created_on>
+        <sys_id>f00bdfd5c3c6cb10801139ec05013149</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:27:09</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=f00bdfd5c3c6cb10801139ec05013149"/>
+    <sys_hub_flow_input action="DELETE" query="model=3c0bdfd5c3c6cb10801139ec05013147^sys_idNOT INf00bdfd5c3c6cb10801139ec0501314b"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records,uiUniqueId=6258af40-df34-4dc7-8a0a-eee5ec7143a6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1920004_smart_0_onboarding_request</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>onboarding_request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>Onboarding Request</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Provision Onboarding Tasks">3c0bdfd5c3c6cb10801139ec05013147</model>
+        <model_id>3c0bdfd5c3c6cb10801139ec05013147</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3c0bdfd5c3c6cb10801139ec05013147</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="x_1920004_smart_0_onboarding_request">x_1920004_smart_0_onboarding_request</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:27:09</sys_created_on>
+        <sys_id>f00bdfd5c3c6cb10801139ec0501314b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=f00bdfd5c3c6cb10801139ec0501314b"/>
+    <sys_hub_flow_output action="DELETE" query="model=3c0bdfd5c3c6cb10801139ec05013147"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=3c0bdfd5c3c6cb10801139ec05013147"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=3c0bdfd5c3c6cb10801139ec05013147"/>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=3c0bdfd5c3c6cb10801139ec05013147^sys_idNOT IN410bdfd5c3c6cb10801139ec05013189,450bdfd5c3c6cb10801139ec0501318a"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Provision Onboarding Tasks">3c0bdfd5c3c6cb10801139ec05013147</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:27:10</sys_created_on>
+        <sys_id>410bdfd5c3c6cb10801139ec05013189</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:27:10</sys_updated_on>
+        <ui_id>9086d71f-4a75-4ef0-8d45-01272ea324bf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX22rjMBD9FePnEOwkTS9vS0thoW2gDX3pLkK25URUlrySnEtD/n1HlnwhcbsJpNCyb/FoRnNm5hxJedn4NPGv/It0FAQ4PLs4D4LhMAjG42GMwygajuMoiEaR3/M5zgh4ahwxAp8LzArzvULh5SAIghFSGZYaBUjwSGCZUD5DGqtXpEmWM6xNUEIV/Fw/u9hJ7elNwdObNp7xnLJEEu5fvfzu+TmWkF0T6V9tdpYOhc9wRBi4Th3+nXL0Oq8/UblmbXftMO/BLgiZGChBzycrTXhCAEOKmSI9P8M8wVrIdW2RBCcTzhrDnHINO/rGeaXoG+S9CIxfSqCqmNi1+hO5pllzeoM1ftKyiHUhnWs8FzQmyvYjISkumL5u26zDJNdUcBtiy7bRghUZf7Dt8OsNqhmBpVAAguSmUIPclZE+zcXysUJ5S3nZE7fIRIxZ/YW1ljQqtMGz8QkjGWyEMpznhiS5FAtaBgOWrD9j8NFPmVhCUkVnvI9jA7wPfcX9W7DflOZnLKmp4h62gWAARBkwBNkRKlHIspULFLNClQsSc2X38rc9X63VNcNKNZVDy9GfwuC2fXAVI9s0ExJLmusfsMWCuOK2vYMUdBY0lIsFT6hBoVoywuWmvwoITmC6HWLp8DilSEqElUiu2xC7YDu57NnuujZwcglPJheo4zsJxkzry+nleAXYFvxDBvH5hyQ7a/ikBNwWtpctHViu7JG/Mh/H+APAVIyfmARetH4PnyN8SglLuu6HW7Owcz8M/s/74UvSHQAlyE6PckZ5edmbU/STdBB8fNhe7vCspFejgtKGVdxxC3haeG9HK+EAOJUSniC3N7V4OiBWJ39Jmd1TvzI6AQxPJoDh4DQC2NRl1o3s6Hn1vjPTrPzfjD/e9QcKtgLCbZfAjsoZHptzsN0X8PAoBbfJZldu3uHciR+C7yiy95lHwBxCXT5k9YuWNJkR3WSvvBKhl5i9dq07xqFqUGV5n/CoHH0o23HYSBSUgiRRMLz2qzKEh9L+GRL2rPm4I+QALFU77vHKe6zBdCJ0xwgonczK2bTPkZ+11ZF8dMKn45e9SathdWqwmtm3+C92OiH8/gte/0aSoRAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=410bdfd5c3c6cb10801139ec05013189"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Provision Onboarding Tasks">3c0bdfd5c3c6cb10801139ec05013147</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>3fd7908c-5e95-4a0a-9f06-68a8fa30eab2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:27:10</sys_created_on>
+        <sys_id>450bdfd5c3c6cb10801139ec0501318a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:27:10</sys_updated_on>
+        <ui_id>b219d5f2-1031-4ee0-a820-37419a0365ad</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTTW/bMAz9K4HOhmHHWdDkNrTIqWuANcilKwzaohNhsuxKchov6H8fZdlO0LX7AHZpTib5SL7H6D2cmOBsyeYco8UinudJnCTTKJpezeJsnmTxlCeAccYCpqBEQh5ANmgo7j4oUYNGZVONT5S335ooSjiVuTC1hHb7e1S+F5JThS0fHgMHoiUWNVueXpX+lqWEDCVBVwIlN2/Qtm3tYosl0bOYehk+f9s3b/riZNsXK80dqThgeLSoOBKbAqTBgJWgONhKt2xpdUMJjcDXSrYjYi+UpaHMYY9G/KD18Tzqfg5dIInM0SPGMO3v59PFDVi4p/m5bXQPzfeVyElSdx6OBTTSXl/mPGBdW1Ep32Ihk0N3JZtS3fnjsHHA8HdRpjFEAmun1vH34or7ffX8dSC5Eqq7Sy9UVjnIMQJrtcga6+icGEos3QMooa6F2qW1rg6iayYqZbiTFISFrJ5ppxE7FULueId0WwhXlL/p0lvQwon4QmOo+SVgpjXXEow5S6Ebpk+NY+KF9RLS7grdCdLuUbjmXIvafqZVB+yJvwSDJWKMPr372HB2flsXM8+2OKbxgrqiWWpK0DaNaH9WgeZOvQXz/VePrEfAZOMB/2iPPzMe7LHpXsLbCgaHvM7dXvZO7nyhd0b0v5xx9ZE80cv48KZ4zwqPPwEEEHv3HwYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=450bdfd5c3c6cb10801139ec0501318a"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=3c0bdfd5c3c6cb10801139ec05013147"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=3c0bdfd5c3c6cb10801139ec05013147^sys_idNOT IN490bdfd5c3c6cb10801139ec05013186"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">341a0a0dc34e0b10801139ec05013157</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Provision Onboarding Tasks">3c0bdfd5c3c6cb10801139ec05013147</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:27:10</sys_created_on>
+        <sys_id>490bdfd5c3c6cb10801139ec05013186</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:27:10</sys_updated_on>
+        <ui_id>3fd7908c-5e95-4a0a-9f06-68a8fa30eab2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TTW+jMBD9Lz4TxFfzdataVaq0u5XSqpdVFQ32kFhrbNY2SVnEf99xILTqsSeY55k37z1Mz0zrm9a7F3PrnDxotv39FjGpA0bvPdNQI9sy6bF2LGInUG2o+36TrJdilVaLAlY3iwKrZLEWxc0iSbNVhpBnRVnFO+TGCjcMNCqkaxR0r99n4EephMVJZAOWtHm0bNt/OZKCFqQbUW3SZMPzbJlnSZKti7Rc5mWaiRxQLIlQQYmKWh8nd1/M+q4JpR0lTMCPaWY3o/QIIrIkYvjuUQuk9RUohxGrQQvwxnZs621LgEUQT1p1c8dRak90LPS+O/mPNqZJEhorJEMcx8O53E85jnB1Dx6eiZr71k6t/GgkRzdGIbCCVvm7z9jY8NR4afQ44qFU12mj2lr/GpNgM8H1sxHSOhKBTTAapE8+quejOe+uKh+kvoQyHSrDQc0VeG9l2fqgp2eosCaifQ1NI/Vh31hzkpdh0lLHB0VFXClzpqXhisbAg/CYcoX4gfD7C/wKVgYXP4mGhoeIuc7dKXDuwwuFuP/bBiWjs8nDfowhjHArG39LC044yR3ewq0fuedMuXQk4SVgj9d/JRx0dIMk/wydjf0TxH9gw39DiWkadQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=3c0bdfd5c3c6cb10801139ec05013147"/>
+    <sys_hub_flow_variable action="DELETE" query="model=3c0bdfd5c3c6cb10801139ec05013147"/>
+    <sys_documentation action="DELETE">
+        <element>onboarding_request</element>
+        <help/>
+        <hint/>
+        <label>Onboarding Request</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3c0bdfd5c3c6cb10801139ec05013147</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:27:10</sys_created_on>
+        <sys_id>c10bdfd5c3c6cb10801139ec0501316e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:27:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_3c0bdfd5c3c6cb10801139ec05013147"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_3c0bdfd5c3c6cb10801139ec05013147"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>8d80ce85c30e0b10801139ec050131af</sys_id>
+        <latest_snapshot>3c0bdfd5c3c6cb10801139ec05013147</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=8d80ce85c30e0b10801139ec050131af"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=8d80ce85c30e0b10801139ec050131af^sys_idNOT IN050bdfd5c3c6cb10801139ec050131c5"/>
+    <sys_flow_subflow_plan action="DELETE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@3887869f</plan>
+        <plan_id display_value="Provision Onboarding Tasks">8d80ce85c30e0b10801139ec050131af</plan_id>
+        <snapshot>3c0bdfd5c3c6cb10801139ec05013147</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:27:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>050bdfd5c3c6cb10801139ec050131c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:27:10</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</application>
+        <file_path/>
+        <instance_id>1c2e1dba3ba5cb18986d048aa4e45a44</instance_id>
+        <instance_name>dev411871</instance_name>
+        <name>sys_hub_flow_8d80ce85c30e0b10801139ec050131af</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;allow_high_security_roles&gt;false&lt;/allow_high_security_roles&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=90832000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;29000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;Creates onboarding tasks dynamically from active templates.&lt;/description&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;provision_onboarding_tasks&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item.template_name","label":"2 - For Each➛Onboarding Task Template Record➛Task Name","reference":"","reference_display":"Task Name","type":"string","base_type":"string","parent_table_name":"x_1920004_smart_0_onboarding_task_template","column_name":"template_name","choices":[{"order":0.0}],"usedInstances":{"97633d2c-1591-4682-80d8-6244842f8cbd":["short_description"]}},{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item.assignment_group","label":"2 - For Each➛Onboarding Task Template Record➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1920004_smart_0_onboarding_task_template","column_name":"assignment_group","choices":[{"order":0.0}],"usedInstances":{"97633d2c-1591-4682-80d8-6244842f8cbd":["assignment_group"]}},{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item","label":"2 - For Each➛Onboarding Task Template Record","reference":"x_1920004_smart_0_onboarding_task_template","reference_display":"Onboarding Task Template","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9086d71f-4a75-4ef0-8d45-01272ea324bf.Records","label":"1 - Look Up Records➛Onboarding Task Template Records","reference":"x_1920004_smart_0_onboarding_task_template","reference_display":"Onboarding Task Template","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;3c0bdfd5c3c6cb10801139ec05013147&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Provision Onboarding Tasks&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-11 11:13:17&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8d80ce85c30e0b10801139ec050131af&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;Provision Onboarding Tasks&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Employee Onboarding Portal"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_8d80ce85c30e0b10801139ec050131af&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:38:03&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;version_record&gt;5e7d535dc3c6cb10801139ec050131f2&lt;/version_record&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=8d80ce85c30e0b10801139ec050131af^sys_idNOT IN4580ce85c30e0b10801139ec050131b1"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;8d80ce85c30e0b10801139ec050131af&lt;/id&gt;&lt;name&gt;Provision Onboarding Tasks&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-11 11:13:17&lt;/sys_created_on&gt;&lt;sys_id&gt;4580ce85c30e0b10801139ec050131b1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-11 11:13:17&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4580ce85c30e0b10801139ec050131b1"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=8d80ce85c30e0b10801139ec050131af^sys_idNOT INd0dc1fd9c3c6cb10801139ec050131ae"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=record_hierarchy_path,uiUniqueId=6258af40-df34-4dc7-8a0a-eee5ec7143a6&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;onboarding_request&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;record_hierarchy_path&lt;/internal_type&gt;&lt;label&gt;Onboarding Request&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;1024&lt;/max_length&gt;&lt;model display_value="Provision Onboarding Tasks"&gt;8d80ce85c30e0b10801139ec050131af&lt;/model&gt;&lt;model_id&gt;8d80ce85c30e0b10801139ec050131af&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_8d80ce85c30e0b10801139ec050131af&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-12 12:35:02&lt;/sys_created_on&gt;&lt;sys_id&gt;d0dc1fd9c3c6cb10801139ec050131ae&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Employee Onboarding Portal"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:35:02&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d0dc1fd9c3c6cb10801139ec050131ae"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=8d80ce85c30e0b10801139ec050131af^sys_idNOT IN1769c60dc34e0b10801139ec050131e7"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Provision Onboarding Tasks"&gt;8d80ce85c30e0b10801139ec050131af&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-11 11:52:13&lt;/sys_created_on&gt;&lt;sys_id&gt;1769c60dc34e0b10801139ec050131e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Smart Employee Onboarding Portal"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:27:09&lt;/sys_updated_on&gt;&lt;ui_id&gt;9086d71f-4a75-4ef0-8d45-01272ea324bf&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VXS0/jMBD+K1HOUeW0pTxuCIS0B6gEFRcWWU7ithaOnbWdPkD89x3HcVpKgNLt7sKtHs/jm5lvJu7dU8iy8CQ8GvcRIvHB0SFCvR5Cg0EvJXGS9AZpgpJ+EkahIDkFTUMSTuE4I7y05wWOj7sIoT7WOVEGIyxFIonKmJhgQ/QDNjQvODHWKGMafi5va9thoxmMQDMYrTTTKeOZoiI8ubuPwoIoiG6oCk+eNq7MsqCYk4RycDiy4IIrizTaOrEXxq8TtQH8EQvnWqrMYkFRSBeGioxCqDHhmkZhTkRGjFTLRqIoyYaCrwRTJgx4DK3yQrNHcH+ErN6YQlopdXfNEddVc+J0KllKh4VhUjiJA+ouJS9zceUSsPWmY1Jy4+sNklKDP1pYzBZEjWh8M5Xzax/wgokqvfqSy5Tw5kSMUSwpDdW2F5TTHBzhnBSFbXih5IxVxoAl70w4HDpjLucQVLOJ6JDUAu9AiUjnAuTnlfiWKGazuAQ3YAyAGIduY1d0LUtVVWWGU17q6kIRoZ2v8LmqFf5VWpQu6zo/7EoECjpVrDCnYDCjdSrP0VbcP0ArSqRSZMzG1GsDQCqnP0swzowqW2jeorEbvc/W42+LvdW4LaGa6C9kNdHjvREd4P4nqtvKfzmmf8Rdl/AHBE4P3yXBwarfWsKGdpVbY7Br8ivaevFuXL1glGcvVvEWML3x0IYOkuVbyGuqjm2MjZ3c/fY7+UsSFQBl2NWbCc5E9Um0u2wvDEbvr7HjDR5U7V/xt5IRnbZs3sDI4HH3fVv11fN3C5De8AYQBSOHsgW437TefU3d3t6o2+t+jrpAnLunBn1TtZYC+5ePbZ3Xf7T6ZFMf2LVmED/fN9Q/2y1m/NmYXRtzYzZ7nxrOdWa5m/M3CLbnd9Ubwxb9zemegmkdD7thxXOWTahZRfdamTRzwh/a7mt2NTNUpffHb7T+u7M3iFdzBjOAFdXQqvVHWgzPjtfrIY6ceLft8EMYOqmKty1Eb3lJFsF1g7EVeL0iWBOj5nR/jy+xf/F584VvnR5f/2/xp2RXCt//BriHfb9kDwAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=1769c60dc34e0b10801139ec050131e7"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8d80ce85c30e0b10801139ec050131af^sys_idNOT INf41a0a0dc34e0b10801139ec05013158"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;341a0a0dc34e0b10801139ec05013157&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Provision Onboarding Tasks"&gt;8d80ce85c30e0b10801139ec050131af&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-11 11:55:03&lt;/sys_created_on&gt;&lt;sys_id&gt;f41a0a0dc34e0b10801139ec05013158&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Smart Employee Onboarding Portal"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:27:09&lt;/sys_updated_on&gt;&lt;ui_id&gt;3fd7908c-5e95-4a0a-9f06-68a8fa30eab2&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/51Sy27jMAz8F50Tw6/mdSuwKNBDt0Bb9FIUBi3RiVBZ0kpyUtfwv5eKneyixz3ZHJLDGZEDM12wXfAv5tZ7udds9/a+YFJHjP4HpqFFtmMyYOvZgh1BdTEehm26WYl11ixLWN8sS2zS5UaUN8s0y9c5QpGXdZM8ITdO+HGkViG9VdC//j8DP0glHM4iLTjSFtCx3fAjFXqLlYIaFQ2aGahfCgqzrWi2WbrlRb4q8jTNN2VWr4o6y0UBKFZUd+m8n03/eIPITqG78tInqsjTBcPPgFogDWpAeVywFrSAYFzPdsF1BDgE8ahVf604SB2IjsXaTy+/iDtL01jYIDniOCWvYTU/5ATzg5EcH22QRk9IgFrNPdyortW/J/lxBdhAp8JlBYR0nvjQRs1RxSypeT6Y09Nl4J3UZ39zUhkO6hpBCE7WXUAf14AKWyKqWrBW6n1lnTnKczNpaZO9oiBplDnR0HhuCfAoPKEnguSO8F9n+BWcjC4eiIaax7P76k8X504+ZsXVZJoKPHfShluiO+IsbnyP9zox+ekwBHLpaeBLxO4vVx4TPS1Z8n+hk3EfUepfbPwGOTTDPy8DAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;onboarding_request&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Onboarding Request&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_8d80ce85c30e0b10801139ec050131af&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-12 12:35:02&lt;/sys_created_on&gt;&lt;sys_id&gt;dcdc1fd9c3c6cb10801139ec050131b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Employee Onboarding Portal"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:35:02&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;allow_high_security_roles&gt;false&lt;/allow_high_security_roles&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;29000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;Creates onboarding tasks dynamically from active templates.&lt;/description&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;internal_name&gt;provision_onboarding_tasks&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item.template_name","label":"2 - For Each➛Onboarding Task Template Record➛Task Name","reference":"","reference_display":"Task Name","type":"string","base_type":"string","parent_table_name":"x_1920004_smart_0_onboarding_task_template","column_name":"template_name","choices":[{"order":0.0}],"usedInstances":{"97633d2c-1591-4682-80d8-6244842f8cbd":["short_description"]}},{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item.assignment_group","label":"2 - For Each➛Onboarding Task Template Record➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1920004_smart_0_onboarding_task_template","column_name":"assignment_group","choices":[{"order":0.0}],"usedInstances":{"97633d2c-1591-4682-80d8-6244842f8cbd":["assignment_group"]}},{"name":"3fd7908c-5e95-4a0a-9f06-68a8fa30eab2.item","label":"2 - For Each➛Onboarding Task Template Record","reference":"x_1920004_smart_0_onboarding_task_template","reference_display":"Onboarding Task Template","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9086d71f-4a75-4ef0-8d45-01272ea324bf.Records","label":"1 - Look Up Records➛Onboarding Task Template Records","reference":"x_1920004_smart_0_onboarding_task_template","reference_display":"Onboarding Task Template","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Provision Onboarding Tasks&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Provision Onboarding Tasks"&gt;8d80ce85c30e0b10801139ec050131af&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-12 12:27:09&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3c0bdfd5c3c6cb10801139ec05013147&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Employee Onboarding Portal"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:27:09&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=3c0bdfd5c3c6cb10801139ec05013147"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=3c0bdfd5c3c6cb10801139ec05013147"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=3c0bdfd5c3c6cb10801139ec05013147"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=3c0bdfd5c3c6cb10801139ec05013147^sys_idNOT INf00bdfd5c3c6cb10801139ec05013149"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;3c0bdfd5c3c6cb10801139ec05013147&lt;/id&gt;&lt;name&gt;Provision Onboarding Tasks&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-12 12:27:09&lt;/sys_created_on&gt;&lt;sys_id&gt;f00bdfd5c3c6cb10801139ec05013149&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:27:09&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f00bdfd5c3c6cb10801139ec05013149"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=3c0bdfd5c3c6cb10801139ec05013147^sys_idNOT INf00bdfd5c3c6cb10801139ec0501314b"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records,uiUniqueId=6258af40-df34-4dc7-8a0a-eee5ec7143a6&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;x_1920004_smart_0_onboarding_request&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;onboarding_request&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Records"&gt;records&lt;/internal_type&gt;&lt;label&gt;Onboarding Request&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;1024&lt;/max_length&gt;&lt;model display_value="Provision Onboarding Tasks"&gt;3c0bdfd5c3c6cb10801139ec05013147&lt;/model&gt;&lt;model_id&gt;3c0bdfd5c3c6cb10801139ec05013147&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_3c0bdfd5c3c6cb10801139ec05013147&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="x_1920004_smart_0_onboarding_request"&gt;x_1920004_smart_0_onboarding_request&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-12 12:27:09&lt;/sys_created_on&gt;&lt;sys_id&gt;f00bdfd5c3c6cb10801139ec0501314b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Employee Onboarding Portal"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:27:10&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f00bdfd5c3c6cb10801139ec0501314b"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=3c0bdfd5c3c6cb10801139ec05013147"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=3c0bdfd5c3c6cb10801139ec05013147"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3c0bdfd5c3c6cb10801139ec05013147"/&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=3c0bdfd5c3c6cb10801139ec05013147^sys_idNOT IN410bdfd5c3c6cb10801139ec05013189,450bdfd5c3c6cb10801139ec0501318a"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Provision Onboarding Tasks"&gt;3c0bdfd5c3c6cb10801139ec05013147&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-12 12:27:10&lt;/sys_created_on&gt;&lt;sys_id&gt;410bdfd5c3c6cb10801139ec05013189&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Smart Employee Onboarding Portal"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:27:10&lt;/sys_updated_on&gt;&lt;ui_id&gt;9086d71f-4a75-4ef0-8d45-01272ea324bf&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VX22rjMBD9FePnEOwkTS9vS0thoW2gDX3pLkK25URUlrySnEtD/n1HlnwhcbsJpNCyb/FoRnNm5hxJedn4NPGv/It0FAQ4PLs4D4LhMAjG42GMwygajuMoiEaR3/M5zgh4ahwxAp8LzArzvULh5SAIghFSGZYaBUjwSGCZUD5DGqtXpEmWM6xNUEIV/Fw/u9hJ7elNwdObNp7xnLJEEu5fvfzu+TmWkF0T6V9tdpYOhc9wRBi4Th3+nXL0Oq8/UblmbXftMO/BLgiZGChBzycrTXhCAEOKmSI9P8M8wVrIdW2RBCcTzhrDnHINO/rGeaXoG+S9CIxfSqCqmNi1+hO5pllzeoM1ftKyiHUhnWs8FzQmyvYjISkumL5u26zDJNdUcBtiy7bRghUZf7Dt8OsNqhmBpVAAguSmUIPclZE+zcXysUJ5S3nZE7fIRIxZ/YW1ljQqtMGz8QkjGWyEMpznhiS5FAtaBgOWrD9j8NFPmVhCUkVnvI9jA7wPfcX9W7DflOZnLKmp4h62gWAARBkwBNkRKlHIspULFLNClQsSc2X38rc9X63VNcNKNZVDy9GfwuC2fXAVI9s0ExJLmusfsMWCuOK2vYMUdBY0lIsFT6hBoVoywuWmvwoITmC6HWLp8DilSEqElUiu2xC7YDu57NnuujZwcglPJheo4zsJxkzry+nleAXYFvxDBvH5hyQ7a/ikBNwWtpctHViu7JG/Mh/H+APAVIyfmARetH4PnyN8SglLuu6HW7Owcz8M/s/74UvSHQAlyE6PckZ5edmbU/STdBB8fNhe7vCspFejgtKGVdxxC3haeG9HK+EAOJUSniC3N7V4OiBWJ39Jmd1TvzI6AQxPJoDh4DQC2NRl1o3s6Hn1vjPTrPzfjD/e9QcKtgLCbZfAjsoZHptzsN0X8PAoBbfJZldu3uHciR+C7yiy95lHwBxCXT5k9YuWNJkR3WSvvBKhl5i9dq07xqFqUGV5n/CoHH0o23HYSBSUgiRRMLz2qzKEh9L+GRL2rPm4I+QALFU77vHKe6zBdCJ0xwgonczK2bTPkZ+11ZF8dMKn45e9SathdWqwmtm3+C92OiH8/gte/0aSoRAAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=410bdfd5c3c6cb10801139ec05013189"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create Record"&gt;2de05916c31332002841b63b12d3aee1&lt;/action_type&gt;&lt;action_type_parent display_value="Create Record"&gt;02f0b88cc3c632002841b63b12d3aeff&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;2de05916c31332002841b63b12d3aee1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Provision Onboarding Tasks"&gt;3c0bdfd5c3c6cb10801139ec05013147&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;3fd7908c-5e95-4a0a-9f06-68a8fa30eab2&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-12 12:27:10&lt;/sys_created_on&gt;&lt;sys_id&gt;450bdfd5c3c6cb10801139ec0501318a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Smart Employee Onboarding Portal"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:27:10&lt;/sys_updated_on&gt;&lt;ui_id&gt;b219d5f2-1031-4ee0-a820-37419a0365ad&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VTTW/bMAz9K4HOhmHHWdDkNrTIqWuANcilKwzaohNhsuxKchov6H8fZdlO0LX7AHZpTib5SL7H6D2cmOBsyeYco8UinudJnCTTKJpezeJsnmTxlCeAccYCpqBEQh5ANmgo7j4oUYNGZVONT5S335ooSjiVuTC1hHb7e1S+F5JThS0fHgMHoiUWNVueXpX+lqWEDCVBVwIlN2/Qtm3tYosl0bOYehk+f9s3b/riZNsXK80dqThgeLSoOBKbAqTBgJWgONhKt2xpdUMJjcDXSrYjYi+UpaHMYY9G/KD18Tzqfg5dIInM0SPGMO3v59PFDVi4p/m5bXQPzfeVyElSdx6OBTTSXl/mPGBdW1Ep32Ihk0N3JZtS3fnjsHHA8HdRpjFEAmun1vH34or7ffX8dSC5Eqq7Sy9UVjnIMQJrtcga6+icGEos3QMooa6F2qW1rg6iayYqZbiTFISFrJ5ppxE7FULueId0WwhXlL/p0lvQwon4QmOo+SVgpjXXEow5S6Ebpk+NY+KF9RLS7grdCdLuUbjmXIvafqZVB+yJvwSDJWKMPr372HB2flsXM8+2OKbxgrqiWWpK0DaNaH9WgeZOvQXz/VePrEfAZOMB/2iPPzMe7LHpXsLbCgaHvM7dXvZO7nyhd0b0v5xx9ZE80cv48KZ4zwqPPwEEEHv3HwYAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=450bdfd5c3c6cb10801139ec0501318a"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3c0bdfd5c3c6cb10801139ec05013147"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3c0bdfd5c3c6cb10801139ec05013147^sys_idNOT IN490bdfd5c3c6cb10801139ec05013186"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;341a0a0dc34e0b10801139ec05013157&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Provision Onboarding Tasks"&gt;3c0bdfd5c3c6cb10801139ec05013147&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-12 12:27:10&lt;/sys_created_on&gt;&lt;sys_id&gt;490bdfd5c3c6cb10801139ec05013186&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:27:10&lt;/sys_updated_on&gt;&lt;ui_id&gt;3fd7908c-5e95-4a0a-9f06-68a8fa30eab2&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/51TTW+jMBD9Lz4TxFfzdataVaq0u5XSqpdVFQ32kFhrbNY2SVnEf99xILTqsSeY55k37z1Mz0zrm9a7F3PrnDxotv39FjGpA0bvPdNQI9sy6bF2LGInUG2o+36TrJdilVaLAlY3iwKrZLEWxc0iSbNVhpBnRVnFO+TGCjcMNCqkaxR0r99n4EephMVJZAOWtHm0bNt/OZKCFqQbUW3SZMPzbJlnSZKti7Rc5mWaiRxQLIlQQYmKWh8nd1/M+q4JpR0lTMCPaWY3o/QIIrIkYvjuUQuk9RUohxGrQQvwxnZs621LgEUQT1p1c8dRak90LPS+O/mPNqZJEhorJEMcx8O53E85jnB1Dx6eiZr71k6t/GgkRzdGIbCCVvm7z9jY8NR4afQ44qFU12mj2lr/GpNgM8H1sxHSOhKBTTAapE8+quejOe+uKh+kvoQyHSrDQc0VeG9l2fqgp2eosCaifQ1NI/Vh31hzkpdh0lLHB0VFXClzpqXhisbAg/CYcoX4gfD7C/wKVgYXP4mGhoeIuc7dKXDuwwuFuP/bBiWjs8nDfowhjHArG39LC044yR3ewq0fuedMuXQk4SVgj9d/JRx0dIMk/wydjf0TxH9gw39DiWkadQMAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=3c0bdfd5c3c6cb10801139ec05013147"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=3c0bdfd5c3c6cb10801139ec05013147"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;onboarding_request&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Onboarding Request&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_3c0bdfd5c3c6cb10801139ec05013147&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-12 12:27:10&lt;/sys_created_on&gt;&lt;sys_id&gt;c10bdfd5c3c6cb10801139ec0501316e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Employee Onboarding Portal"&gt;ba3ff8bd9378c3106b0afd245d03d651&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:27:10&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3c0bdfd5c3c6cb10801139ec05013147"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3c0bdfd5c3c6cb10801139ec05013147"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;8d80ce85c30e0b10801139ec050131af&lt;/sys_id&gt;&lt;latest_snapshot&gt;3c0bdfd5c3c6cb10801139ec05013147&lt;/latest_snapshot&gt;&lt;compiler_build/&gt;&lt;version_record/&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=8d80ce85c30e0b10801139ec050131af"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=8d80ce85c30e0b10801139ec050131af^sys_idNOT IN050bdfd5c3c6cb10801139ec050131c5"/&gt;&lt;sys_flow_subflow_plan action="INSERT_OR_UPDATE"&gt;&lt;plan&gt;com.snc.process_flow.engine.ProcessPlan@3887869f&lt;/plan&gt;&lt;plan_id display_value="Provision Onboarding Tasks"&gt;8d80ce85c30e0b10801139ec050131af&lt;/plan_id&gt;&lt;snapshot&gt;3c0bdfd5c3c6cb10801139ec05013147&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-12 12:27:10&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;050bdfd5c3c6cb10801139ec050131c5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-12 12:27:10&lt;/sys_updated_on&gt;&lt;/sys_flow_subflow_plan&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1252613732</payload_hash>
+        <record_name>Provision Onboarding Tasks</record_name>
+        <reverted_from/>
+        <source>39ee7fa4c30e4710801139ec05013118</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:38:03</sys_created_on>
+        <sys_id>a48dd35dc3c6cb10801139ec0501311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f5655ae760000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:38:03</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>648dd35d24c6cb1059a919552729651b</update_guid>
+        <update_guid_history>648dd35d24c6cb1059a919552729651b:-1252613732,03dc9fd971c6cb10aee067e66c64c593:-1713467712,d10bdfd5b4c6cb10393a1dd90f67e1e7:617367983,b80bdfd588c6cb1061ef17b25d73ec28:-20040355,63a053d11386cb103a77aaa82c7cd42e:-417703868,2a601b917986cb10013bd2d8277673ad:-1226592329,bb3093914086cb10e2498a8bea681373:-396169648,86ff4b51ad86cb10bdd1d00c477a5476:-344688945,c7efc7512b86cb1076917cd4de51a557:274404759,e2df07519886cb10ccce3f3ab228a49d:-846342795,1c8f4b11c486cb10a7321fde72b15360:246322100,4b0dcbd97a46cb10261abc710ebd52df:-135107495,fe6a0a8dd64e0b10bdfdfea7ec2ac72f:-22956633,ae5a868da34e0b106f674157e371490b:405739666,234a068d944e0b1025c18ee804ecbd53:1618884630,531a4e4de34e0b10e0c3344183da66e3:-1150696257,5f69c60d804e0b106ded935524f4bcfd:-2111782104,23b882c9f84e0b10189fb55b8a26bd4c:-906663905,12870e09c94e0b107c6497f42f1c9db0:1818851533,42c586458b4e0b1096c5d5c95d5b480a:2060342444,3c054ec1074e0b10fc1abafb0e66bfb5:-1428236145,c98042c97b0e0b103dbf5d206c0efe10:1998390529</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-12 12:38:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>3ac65133555b4026925ed4cdb3d2a759</sys_id>
+        <sys_metadata>8d80ce85c30e0b10801139ec050131af</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Provision Onboarding Tasks</sys_name>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_scope_delete display_value="">2209f09ad1ac490c8732afa3724da710</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_8d80ce85c30e0b10801139ec050131af</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_8d80ce85c30e0b10801139ec050131af">a48dd35dc3c6cb10801139ec0501311c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-12 12:38:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
