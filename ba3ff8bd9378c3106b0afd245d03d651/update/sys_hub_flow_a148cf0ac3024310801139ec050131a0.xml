@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2088000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Monitor's the lifecycle of an onboarding task</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>onboarding_task_lifecycle</internal_name>
+        <label_cache>[{"name":"Updated_1.current.parent_request","label":"Trigger - Record Updated➛Onboarding Task Record➛Parent Request","reference":"x_1920004_smart_0_onboarding_request","reference_display":"Onboarding Request","type":"reference","base_type":"reference","parent_table_name":"x_1920004_smart_0_onboarding_task","column_name":"parent_request","usedInstances":{"25bb3e02-f76f-4e8e-9afa-34d3df06dd38":[null],"bd536532-7d69-4cab-a107-946940e4f5e5":["record"]}},{"name":"25bb3e02-f76f-4e8e-9afa-34d3df06dd38.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"5685c4d5-37c4-4ba3-a556-ca6ee28bc781":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>e330974ac3424310801139ec0501313e</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Onboarding Task Lifecycle</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>f330974ac3424310801139ec050131b6</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:00:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a148cf0ac3024310801139ec050131a0</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Onboarding Task Lifecycle</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name>sys_hub_flow_a148cf0ac3024310801139ec050131a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:34</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>4040d74ac3424310801139ec05013130</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=a148cf0ac3024310801139ec050131a0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a148cf0ac3024310801139ec050131a0"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1920004_smart_0_onboarding_task">state=3<item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f330974ac3424310801139ec050131b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:34</sys_updated_on>
+        <table>x_1920004_smart_0_onboarding_task</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>a148cf0ac3024310801139ec050131a0</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:34</sys_created_on>
+        <sys_id>3b30974ac3424310801139ec050131b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:34</sys_updated_on>
+        <trigger display_value="">f330974ac3424310801139ec050131b6</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a148cf0ac3024310801139ec050131a0^sys_idNOT IN3b30974ac3424310801139ec050131b7"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=a148cf0ac3024310801139ec050131a0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a148cf0ac3024310801139ec050131a0^sys_idNOT INa948cf0ac3024310801139ec050131a1"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a148cf0ac3024310801139ec050131a0</id>
+        <name>Onboarding Task Lifecycle</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:00:44</sys_created_on>
+        <sys_id>a948cf0ac3024310801139ec050131a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:00:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a948cf0ac3024310801139ec050131a1"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a148cf0ac3024310801139ec050131a0^sys_idNOT IN1f68c74ac3024310801139ec050131c1,9b680b4ac3024310801139ec05013131,9f680b4ac3024310801139ec05013125"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Onboarding Task Lifecycle">a148cf0ac3024310801139ec050131a0</model>
+        <model_id>a148cf0ac3024310801139ec050131a0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a148cf0ac3024310801139ec050131a0</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:01:24</sys_created_on>
+        <sys_id>1f68c74ac3024310801139ec050131c1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1f68c74ac3024310801139ec050131c1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Onboarding Task Lifecycle">a148cf0ac3024310801139ec050131a0</model>
+        <model_id>a148cf0ac3024310801139ec050131a0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a148cf0ac3024310801139ec050131a0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:01:24</sys_created_on>
+        <sys_id>9b680b4ac3024310801139ec05013131</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:01:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9b680b4ac3024310801139ec05013131"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Onboarding Task Lifecycle">a148cf0ac3024310801139ec050131a0</model>
+        <model_id>a148cf0ac3024310801139ec050131a0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a148cf0ac3024310801139ec050131a0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:01:24</sys_created_on>
+        <sys_id>9f680b4ac3024310801139ec05013125</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9f680b4ac3024310801139ec05013125"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=a148cf0ac3024310801139ec050131a0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a148cf0ac3024310801139ec050131a0"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=a148cf0ac3024310801139ec050131a0^sys_idNOT IN8f68c74ac3024310801139ec05013185"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Onboarding Task Lifecycle">a148cf0ac3024310801139ec050131a0</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:01:23</sys_created_on>
+        <sys_id>8f68c74ac3024310801139ec05013185</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:32</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=a148cf0ac3024310801139ec050131a0^sys_idNOT IN5adbcb86c3024310801139ec05013180,976d8bc2c3424310801139ec0501315e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Onboarding Task Lifecycle">a148cf0ac3024310801139ec050131a0</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:16:21</sys_created_on>
+        <sys_id>5adbcb86c3024310801139ec05013180</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:40:52</sys_updated_on>
+        <ui_id>25bb3e02-f76f-4e8e-9afa-34d3df06dd38</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXW0/bMBT+K12eqyppSmG8TSCkSUAlYLwwZjmx01q4TrCdllL1v+84di5rA2qlIIH26HP9zuWLnYe1x4h36p0kI9/HwdHJse+Hoe+Px2GMgygKx3HkR6PI63sCzylYahxxCscF5rk5v6Dg+9D3/RFScyw18lEqohRLwsQUaayewJYwlXG8uncuk8qgd2cN4hnjRFLhnT489r0MS8ilqfRO11uqfcFyHFEOpncO7RZ4vcqqIyp0VnbZdOtdW0UqiYHi9z36oqkgFDAkmCva9+ZYEKxTuaokkmIyEbwWzJjQENEzxi+KvULeE9/YJRSqiqnVVUfkemXFyTnW+FbLPNa5dKbxLGUxVbYfhCY45/qsKbMGk0yzVFgXW7b1Tnk+F9e2HV4VoBwNSHIFIGhmCjXIXRnJ7Sxd3pQoL5goeuKUPI0xr05Ya8miXBs8a49yOodAaI6zzKxEJtMFK5wBy3ww5XAYJDxdQlLFpmKAYwN8AH3FgwuQnxfieyyZqeIKwoAzAGIcNgTZEao0l0UrFyjmuSoUEgtlY3mbvqdW6oxjperKoeXoOTe4bR9cxcg2zbjEkmX6B4RYUFfcpr8XX478euXiVBBmUKgGaWDDTSpJn3Oq9O8cgpD1+lcGRVOCgkGcS2Mw+Ndus/mjNFh8sw7hLrM6i9slIYtulIQ8a7ajrUWOmjuyy7YAjppBZ9SEOr4SOSH55+Pm4WyzLWinXCksVq+ePZza+LmpGBofv7uTR/X6qRSuLdv6BkV3yXUwLfaAUNJiYha5F63eQuVYkTDKSduFdWEUWxfW8P+8sD4lJwAQQXZ6THAmitcHAO2YLNX2++9/kb9v7VmxXvXuFzKs4l0O4J5Oe68HM2EPOCUTbiF3787iaYFYXg/FymxfDaXQESDsjADhsBsCrKsyq0a29Lx8cJpplvavxh5v28MKNhyCTRvBDsoZHJpzuNklcHgQg5vLZjXnb+xcxy/TNxjZ/8hPwAxcXT5k+YuWjEyprrOXViTVS8yf2vRu41A5qKK8D3jljt6l7TioKQpMgdekguE1n7kBvKZ2vyFB34oP+4TsgaVsxxV+6d1UYFoRus8IMJ1Oi9k0vyM/K6lb8lGH78tPe5OWw2rlYDmzL/Fz2B0RHv8C9buPIiARAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5adbcb86c3024310801139ec05013180"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Onboarding Task Lifecycle">a148cf0ac3024310801139ec050131a0</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>5685c4d5-37c4-4ba3-a556-ca6ee28bc781</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:23:15</sys_created_on>
+        <sys_id>976d8bc2c3424310801139ec0501315e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:40:52</sys_updated_on>
+        <ui_id>bd536532-7d69-4cab-a107-946940e4f5e5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTW/aQBD9K2jPyLIxQYFbBUKqlCYVabmkkTX2DmGl9Uf2g0AR/72z9togkqaJlEtULmhn5u28N8xj7/ZMcDZhQ+RhNI5GWRzF8SAMB5fDKB3FaTTgMSBGrM8KyJEqFWal4nTegLQusN//rDgY5EkUZFYpLExQgftKFD5a1OZwoHIudCVht/QoimRrITnVscndfZ8RhBoYVGyyP0u9laGEFCWVLlqK55TNrnJnXmY2d/xEG7zyyJnP9L7OKEMgRycK+wy3BguORGQFUmOf5VCQ6FLt2MQoSwGFwG8Kuesq1qIwjdActlr8ps7D0NWtkJRlfgjdMfEDasKrGRi4pZszY1U3r1JkqJuZcFyBlWZ6GmsKbiojyqKBGEhliy6lzYvrZiKsu+Dk97CaSGDldDrmjazV7bp8WrQk56KoR+IlyjID2Z3AGCVSaxydPUOJ9YxzqCpRPCSVKjeiBhOVPHiQdAhWsnyinlo8FAFkjndAU4VgTvFZHV6CEk7EN7qGwIc+0zs9laD1UQrNMHm0jkkjzEtI6inUI0jqTXDgTInKfKFWG/TED33vgfTitQ3LxseFOrnz6INtEo0JFQ4TnYMySUj90xIUd+q9E5774HvtlN6iy7/PFW/g3LriR70LL2vwxngWuzrF9q6bhLfFxYfZ4vIz2cLL+PS++JcbwsGr/7cnm1QbQJ84QRswVv+yYRjzaZlXkhaYP1/9v5W9zwFv4Nk6YC5Qcv0C8Xb9kUjQS5Y0Qs4s4JO9pU92r8OH+SAahfXnE7nhv3kk7v8AvdaAVyoJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=976d8bc2c3424310801139ec0501315e"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=a148cf0ac3024310801139ec050131a0"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a148cf0ac3024310801139ec050131a0^sys_idNOT IN5abcc382c3424310801139ec050131dd"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1730574ac3424310801139ec050131c5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Onboarding Task Lifecycle">a148cf0ac3024310801139ec050131a0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:20:10</sys_created_on>
+        <sys_id>5abcc382c3424310801139ec050131dd</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:32</sys_updated_on>
+        <ui_id>5685c4d5-37c4-4ba3-a556-ca6ee28bc781</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lYJnWaAky3V8C1IEKNA2QBPk0gbCiqRsohSpkpQd1/C/d6mHbTQOagQ99iYNubszo1ntiGl903r3YK6dk0tNFt+eIiJ1wPB5RyQnC1JRqJIrlrAsnWUppel8mpSzrExSnoGAjEREQy3wJjOaSy+NLjogImtQbTjARy5do2D7eETYSipuxTC1AYs1Xliy2P1x5LeNKBSUQmHhvbdSL7H8Um5j4c1I7t2nDnmddZiHuBsnGcsDrYRGRDx7obnA0RUoJyJSg+bgjd0eECuA32l1BFZS+15xDc9O/sLeaZ6Hi5VAjWyw4/BaDFaNLhnJxF0TCPaIh1KNFhrV1vpLryOYLCpolT8xuXXYTzSBdGAxUKruV2bzdRx4K3UncDhUhoE6vIFHG8rWCxc+jFCixkZFDU2D5hSNNWvZFSOXOl4qfIkrZTY4NCQqBhaIx+gRxLeIf+jgR7AyqPiMbbC4p1mCk6zo0oftvEUJ+86W4mcbCPUCBylF7wZecMzKxl/jnLUYWO+jIbpXkFd5QvPz8ZjOzoTgJLW7XZqXZSZoOqnez6rJVMzF5AoqmGRTnvGKzjjP5vGNabXf77+3lGacvoz6W9v8i/24wIAX+3HelFeWIv3LUoTPeOFOUEr/L8XpUkhX9OEetHXD37wTTyHY/QTX54YLJh0SeQjYx/GvHw62GADJTqGNsT+ChCO2/w1rf8ZBPwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a148cf0ac3024310801139ec050131a0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a148cf0ac3024310801139ec050131a0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a148cf0ac3024310801139ec050131a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:01:24</sys_created_on>
+        <sys_id>1b68c74ac3024310801139ec050131ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:01:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a148cf0ac3024310801139ec050131a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:01:25</sys_created_on>
+        <sys_id>ab680b4ac3024310801139ec05013139</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:01:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a148cf0ac3024310801139ec050131a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:01:24</sys_created_on>
+        <sys_id>df680b4ac3024310801139ec0501312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:01:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a148cf0ac3024310801139ec050131a0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a148cf0ac3024310801139ec050131a0"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Monitor's the lifecycle of an onboarding task</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>onboarding_task_lifecycle</internal_name>
+        <label_cache>[{"name":"Updated_1.current.parent_request","label":"Trigger - Record Updated➛Onboarding Task Record➛Parent Request","reference":"x_1920004_smart_0_onboarding_request","reference_display":"Onboarding Request","type":"reference","base_type":"reference","parent_table_name":"x_1920004_smart_0_onboarding_task","column_name":"parent_request","usedInstances":{"25bb3e02-f76f-4e8e-9afa-34d3df06dd38":[null],"bd536532-7d69-4cab-a107-946940e4f5e5":["record"]}},{"name":"25bb3e02-f76f-4e8e-9afa-34d3df06dd38.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"5685c4d5-37c4-4ba3-a556-ca6ee28bc781":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Onboarding Task Lifecycle</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Onboarding Task Lifecycle">a148cf0ac3024310801139ec050131a0</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e330974ac3424310801139ec0501313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:33</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e330974ac3424310801139ec0501313e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e330974ac3424310801139ec0501313e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e330974ac3424310801139ec0501313e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e330974ac3424310801139ec0501313e^sys_idNOT IN6f30974ac3424310801139ec0501313f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e330974ac3424310801139ec0501313e</id>
+        <name>Onboarding Task Lifecycle</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:33</sys_created_on>
+        <sys_id>6f30974ac3424310801139ec0501313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6f30974ac3424310801139ec0501313f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e330974ac3424310801139ec0501313e^sys_idNOT IN6730974ac3424310801139ec05013141,7730974ac3424310801139ec0501317a,a730974ac3424310801139ec05013161"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Onboarding Task Lifecycle">e330974ac3424310801139ec0501313e</model>
+        <model_id>e330974ac3424310801139ec0501313e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e330974ac3424310801139ec0501313e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:33</sys_created_on>
+        <sys_id>6730974ac3424310801139ec05013141</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6730974ac3424310801139ec05013141"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Onboarding Task Lifecycle">e330974ac3424310801139ec0501313e</model>
+        <model_id>e330974ac3424310801139ec0501313e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e330974ac3424310801139ec0501313e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:34</sys_created_on>
+        <sys_id>7730974ac3424310801139ec0501317a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7730974ac3424310801139ec0501317a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Onboarding Task Lifecycle">e330974ac3424310801139ec0501313e</model>
+        <model_id>e330974ac3424310801139ec0501313e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e330974ac3424310801139ec0501313e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:33</sys_created_on>
+        <sys_id>a730974ac3424310801139ec05013161</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a730974ac3424310801139ec05013161"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e330974ac3424310801139ec0501313e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e330974ac3424310801139ec0501313e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e330974ac3424310801139ec0501313e^sys_idNOT IN3f30974ac3424310801139ec050131a0"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Onboarding Task Lifecycle">e330974ac3424310801139ec0501313e</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:34</sys_created_on>
+        <sys_id>3f30974ac3424310801139ec050131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:34</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e330974ac3424310801139ec0501313e^sys_idNOT IN3b30974ac3424310801139ec0501319e,fb30974ac3424310801139ec05013190"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Onboarding Task Lifecycle">e330974ac3424310801139ec0501313e</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>5685c4d5-37c4-4ba3-a556-ca6ee28bc781</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:34</sys_created_on>
+        <sys_id>3b30974ac3424310801139ec0501319e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:34</sys_updated_on>
+        <ui_id>bd536532-7d69-4cab-a107-946940e4f5e5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTW/aQBD9K2jPyLIxQYFbBUKqlCYVabmkkTX2DmGl9Uf2g0AR/72z9togkqaJlEtULmhn5u28N8xj7/ZMcDZhQ+RhNI5GWRzF8SAMB5fDKB3FaTTgMSBGrM8KyJEqFWal4nTegLQusN//rDgY5EkUZFYpLExQgftKFD5a1OZwoHIudCVht/QoimRrITnVscndfZ8RhBoYVGyyP0u9laGEFCWVLlqK55TNrnJnXmY2d/xEG7zyyJnP9L7OKEMgRycK+wy3BguORGQFUmOf5VCQ6FLt2MQoSwGFwG8Kuesq1qIwjdActlr8ps7D0NWtkJRlfgjdMfEDasKrGRi4pZszY1U3r1JkqJuZcFyBlWZ6GmsKbiojyqKBGEhliy6lzYvrZiKsu+Dk97CaSGDldDrmjazV7bp8WrQk56KoR+IlyjID2Z3AGCVSaxydPUOJ9YxzqCpRPCSVKjeiBhOVPHiQdAhWsnyinlo8FAFkjndAU4VgTvFZHV6CEk7EN7qGwIc+0zs9laD1UQrNMHm0jkkjzEtI6inUI0jqTXDgTInKfKFWG/TED33vgfTitQ3LxseFOrnz6INtEo0JFQ4TnYMySUj90xIUd+q9E5774HvtlN6iy7/PFW/g3LriR70LL2vwxngWuzrF9q6bhLfFxYfZ4vIz2cLL+PS++JcbwsGr/7cnm1QbQJ84QRswVv+yYRjzaZlXkhaYP1/9v5W9zwFv4Nk6YC5Qcv0C8Xb9kUjQS5Y0Qs4s4JO9pU92r8OH+SAahfXnE7nhv3kk7v8AvdaAVyoJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3b30974ac3424310801139ec0501319e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Onboarding Task Lifecycle">e330974ac3424310801139ec0501313e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:34</sys_created_on>
+        <sys_id>fb30974ac3424310801139ec05013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:34</sys_updated_on>
+        <ui_id>25bb3e02-f76f-4e8e-9afa-34d3df06dd38</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXW0/bMBT+K12eqyppSmG8TSCkSUAlYLwwZjmx01q4TrCdllL1v+84di5rA2qlIIH26HP9zuWLnYe1x4h36p0kI9/HwdHJse+Hoe+Px2GMgygKx3HkR6PI63sCzylYahxxCscF5rk5v6Dg+9D3/RFScyw18lEqohRLwsQUaayewJYwlXG8uncuk8qgd2cN4hnjRFLhnT489r0MS8ilqfRO11uqfcFyHFEOpncO7RZ4vcqqIyp0VnbZdOtdW0UqiYHi9z36oqkgFDAkmCva9+ZYEKxTuaokkmIyEbwWzJjQENEzxi+KvULeE9/YJRSqiqnVVUfkemXFyTnW+FbLPNa5dKbxLGUxVbYfhCY45/qsKbMGk0yzVFgXW7b1Tnk+F9e2HV4VoBwNSHIFIGhmCjXIXRnJ7Sxd3pQoL5goeuKUPI0xr05Ya8miXBs8a49yOodAaI6zzKxEJtMFK5wBy3ww5XAYJDxdQlLFpmKAYwN8AH3FgwuQnxfieyyZqeIKwoAzAGIcNgTZEao0l0UrFyjmuSoUEgtlY3mbvqdW6oxjperKoeXoOTe4bR9cxcg2zbjEkmX6B4RYUFfcpr8XX478euXiVBBmUKgGaWDDTSpJn3Oq9O8cgpD1+lcGRVOCgkGcS2Mw+Ndus/mjNFh8sw7hLrM6i9slIYtulIQ8a7ajrUWOmjuyy7YAjppBZ9SEOr4SOSH55+Pm4WyzLWinXCksVq+ePZza+LmpGBofv7uTR/X6qRSuLdv6BkV3yXUwLfaAUNJiYha5F63eQuVYkTDKSduFdWEUWxfW8P+8sD4lJwAQQXZ6THAmitcHAO2YLNX2++9/kb9v7VmxXvXuFzKs4l0O4J5Oe68HM2EPOCUTbiF3787iaYFYXg/FymxfDaXQESDsjADhsBsCrKsyq0a29Lx8cJpplvavxh5v28MKNhyCTRvBDsoZHJpzuNklcHgQg5vLZjXnb+xcxy/TNxjZ/8hPwAxcXT5k+YuWjEyprrOXViTVS8yf2vRu41A5qKK8D3jljt6l7TioKQpMgdekguE1n7kBvKZ2vyFB34oP+4TsgaVsxxV+6d1UYFoRus8IMJ1Oi9k0vyM/K6lb8lGH78tPe5OWw2rlYDmzL/Fz2B0RHv8C9buPIiARAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fb30974ac3424310801139ec05013190"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e330974ac3424310801139ec0501313e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e330974ac3424310801139ec0501313e^sys_idNOT INf330974ac3424310801139ec0501318e"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1730574ac3424310801139ec050131c5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Onboarding Task Lifecycle">e330974ac3424310801139ec0501313e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:34</sys_created_on>
+        <sys_id>f330974ac3424310801139ec0501318e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:34</sys_updated_on>
+        <ui_id>5685c4d5-37c4-4ba3-a556-ca6ee28bc781</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJnWaAly7V9CxwEKJA2QBPk0gbCig+bKEWqImXHNfzvXUryA4mLOm2PvZlD7u7MaAfeEtv4qvHuwV45pxaGzL48RUSZgOHvLVGczIikIIdTNmRpMk4TSpPJaFiM02KY8BQEpCQiBkqBL5k1XHllTd4CEVmBbsIF/uTKVRo2j0eELZXmteinVlBjjRc1mW1fXF3KQkMhND6d72m8u22RX/PzmyrgztfKLPrzbd/lfg/amgdWQxoR8eyF4QL5SNBORKQEw8HbenNAagH8zugjsFTGd4JLeHbqBw5Msiw8lAIlst6NwzHvnepgeQ0ekErDfFMfjLOKCdeZw4WERvv5KdY9uKuC1K7EQ6H31VY3pfnUOUIODU4+TOOQhKiC0kC91yHvl3b9ec/yRpnWlf5SWwb6cAKP3hWND3y2RGhRYqO8hKpCR/OqtivVFiOXMl5oPMRS2zUODVsYAwvEYzQW4hvEr1v4EWoVVHzENljc0SzAKZa3G4vt0CZBdhFxGzfX4NxRJLqbf28CxU5yLy7v/AklrFaVv8LJK9Hr2EV9AKaQyWxIs/OrNxqfWbCT3d9uk6woUkGTgXw/loORmIjBFCQM0hFPuaRjztNJPLeN8bvd14bSlNPXgfnTNm9L2QVSX6XsvPy3RCv5TbTCd70wWZTS/9H662gpl3eB6LW1w/9hsp5CPLqZB6+ZckjtIWAf9v9A4WKDy6XYKbS29bcg6ojtfgLQhmFNywYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e330974ac3424310801139ec0501313e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e330974ac3424310801139ec0501313e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e330974ac3424310801139ec0501313e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:34</sys_created_on>
+        <sys_id>3f30974ac3424310801139ec05013181</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e330974ac3424310801139ec0501313e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:33</sys_created_on>
+        <sys_id>e330974ac3424310801139ec05013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e330974ac3424310801139ec0501313e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:33</sys_created_on>
+        <sys_id>eb30974ac3424310801139ec0501315c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e330974ac3424310801139ec0501313e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e330974ac3424310801139ec0501313e"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>a148cf0ac3024310801139ec050131a0</sys_id>
+        <latest_snapshot>e330974ac3424310801139ec0501313e</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a148cf0ac3024310801139ec050131a0^sys_idNOT IN3b30974ac3424310801139ec050131b8"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"3b30974ac3424310801139ec050131b8","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>a148cf0ac3024310801139ec050131a0</plan_id>
+        <snapshot>d571930ec3424310801139ec0501311c</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 19:35:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3b30974ac3424310801139ec050131b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 19:35:34</sys_updated_on>
+        <trigger display_value="">f330974ac3424310801139ec050131b6</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a148cf0ac3024310801139ec050131a0"/>
+</record_update>
