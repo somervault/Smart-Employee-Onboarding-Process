@@ -14,6 +14,7 @@
             </choice>
         </element>
         <element label="Employee Email" mandatory="true" max_length="40" name="employee_email" type="string"/>
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
         <element label="Overall Due Date" max_length="255" name="overall_due_date" type="due_date"/>
         <element label="Progress" max_length="40" name="progress" type="integer"/>
         <element label="Employee ID" max_length="40" name="employee_id" type="string"/>
@@ -79,9 +80,12 @@
             </choice>
         </element>
         <index name="index">
-            <element name="manager"/>
+            <element name="employee"/>
         </index>
         <index name="index2">
+            <element name="manager"/>
+        </index>
+        <index name="index3">
             <element name="requested_by"/>
         </index>
     </element>

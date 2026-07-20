@@ -4,139 +4,111 @@
             <element>employee_name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-16 20:02:47</sys_created_on>
-            <sys_id>2fa0e3439370cf106b0afd245d03d6c7</sys_id>
+            <sys_created_on>2026-07-20 19:25:36</sys_created_on>
+            <sys_id>5087824cc3560350801139ec050131ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1920004_smart_0_onboarding_request" sys_domain="global" view="Default view">8f8185f193b8c3106b0afd245d03d6c6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-16 20:02:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>employee_email</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-16 20:02:47</sys_created_on>
-            <sys_id>27a0e3439370cf106b0afd245d03d6c9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1920004_smart_0_onboarding_request" sys_domain="global" view="Default view">8f8185f193b8c3106b0afd245d03d6c6</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-16 20:02:47</sys_updated_on>
+            <sys_updated_on>2026-07-20 19:25:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>department</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-16 20:02:47</sys_created_on>
-            <sys_id>a3a0e3439370cf106b0afd245d03d6ca</sys_id>
+            <sys_created_on>2026-07-20 19:25:36</sys_created_on>
+            <sys_id>1887824cc3560350801139ec050131af</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1920004_smart_0_onboarding_request" sys_domain="global" view="Default view">8f8185f193b8c3106b0afd245d03d6c6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-16 20:02:47</sys_updated_on>
+            <sys_updated_on>2026-07-20 19:25:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>location</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-16 20:02:47</sys_created_on>
-            <sys_id>23a0e3439370cf106b0afd245d03d6cb</sys_id>
+            <sys_created_on>2026-07-20 19:25:36</sys_created_on>
+            <sys_id>9487824cc3560350801139ec050131b0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1920004_smart_0_onboarding_request" sys_domain="global" view="Default view">8f8185f193b8c3106b0afd245d03d6c6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-16 20:02:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>laptop_type</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-16 20:02:47</sys_created_on>
-            <sys_id>afa0e3439370cf106b0afd245d03d6cb</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1920004_smart_0_onboarding_request" sys_domain="global" view="Default view">8f8185f193b8c3106b0afd245d03d6c6</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-16 20:02:47</sys_updated_on>
+            <sys_updated_on>2026-07-20 19:25:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>5</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-16 20:02:47</sys_created_on>
-            <sys_id>2fa0e3439370cf106b0afd245d03d6cc</sys_id>
+            <sys_created_on>2026-07-20 19:25:36</sys_created_on>
+            <sys_id>1487824cc3560350801139ec050131b1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1920004_smart_0_onboarding_request" sys_domain="global" view="Default view">8f8185f193b8c3106b0afd245d03d6c6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-16 20:02:47</sys_updated_on>
+            <sys_updated_on>2026-07-20 19:25:36</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>manager</element>
-            <position>6</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-16 20:02:47</sys_created_on>
-            <sys_id>aba0e3439370cf106b0afd245d03d6cd</sys_id>
+            <sys_created_on>2026-07-20 19:25:36</sys_created_on>
+            <sys_id>9087824cc3560350801139ec050131b2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1920004_smart_0_onboarding_request" sys_domain="global" view="Default view">8f8185f193b8c3106b0afd245d03d6c6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-16 20:02:47</sys_updated_on>
+            <sys_updated_on>2026-07-20 19:25:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>joining_date</element>
-            <position>7</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-16 20:02:47</sys_created_on>
-            <sys_id>2ba0e3439370cf106b0afd245d03d6ce</sys_id>
+            <sys_created_on>2026-07-20 19:25:36</sys_created_on>
+            <sys_id>1087824cc3560350801139ec050131b3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1920004_smart_0_onboarding_request" sys_domain="global" view="Default view">8f8185f193b8c3106b0afd245d03d6c6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-16 20:02:47</sys_updated_on>
+            <sys_updated_on>2026-07-20 19:25:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>job_role</element>
-            <position>8</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-16 20:02:47</sys_created_on>
-            <sys_id>a7a0e3439370cf106b0afd245d03d6cf</sys_id>
+            <sys_created_on>2026-07-20 19:25:36</sys_created_on>
+            <sys_id>9c87824cc3560350801139ec050131b3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1920004_smart_0_onboarding_request" sys_domain="global" view="Default view">8f8185f193b8c3106b0afd245d03d6c6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-16 20:02:47</sys_updated_on>
+            <sys_updated_on>2026-07-20 19:25:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>status</element>
-            <position>9</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-16 20:02:47</sys_created_on>
-            <sys_id>27a0e3439370cf106b0afd245d03d6d0</sys_id>
+            <sys_created_on>2026-07-20 19:25:36</sys_created_on>
+            <sys_id>1c87824cc3560350801139ec050131b4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1920004_smart_0_onboarding_request" sys_domain="global" view="Default view">8f8185f193b8c3106b0afd245d03d6c6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-16 20:02:47</sys_updated_on>
+            <sys_updated_on>2026-07-20 19:25:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

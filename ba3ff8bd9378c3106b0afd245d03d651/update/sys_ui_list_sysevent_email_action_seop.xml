@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sysevent_email_action" version="2" view="seop">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="sysevent_email_action" element="NULL" name="sysevent_email_action" parent="NULL" relationship="NULL" sys_domain="global" view="0295ddc1c3c60b10801139ec05013193">45d48bf7c34e8f10801139ec05013194</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_id>c5d48bf7c34e8f10801139ec05013195</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="sysevent_email_action" element="NULL" name="sysevent_email_action" parent="NULL" relationship="NULL" sys_domain="global" view="0295ddc1c3c60b10801139ec05013193">45d48bf7c34e8f10801139ec05013194</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_id>4dd48bf7c34e8f10801139ec05013195</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>collection</element>
+            <list_id display_value="sysevent_email_action" element="NULL" name="sysevent_email_action" parent="NULL" relationship="NULL" sys_domain="global" view="0295ddc1c3c60b10801139ec05013193">45d48bf7c34e8f10801139ec05013194</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_id>c1d48bf7c34e8f10801139ec05013196</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>category</element>
+            <list_id display_value="sysevent_email_action" element="NULL" name="sysevent_email_action" parent="NULL" relationship="NULL" sys_domain="global" view="0295ddc1c3c60b10801139ec05013193">45d48bf7c34e8f10801139ec05013194</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_id>49d48bf7c34e8f10801139ec05013196</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>template</element>
+            <list_id display_value="sysevent_email_action" element="NULL" name="sysevent_email_action" parent="NULL" relationship="NULL" sys_domain="global" view="0295ddc1c3c60b10801139ec05013193">45d48bf7c34e8f10801139ec05013194</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_id>cdd48bf7c34e8f10801139ec05013196</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>condition</element>
+            <list_id display_value="sysevent_email_action" element="NULL" name="sysevent_email_action" parent="NULL" relationship="NULL" sys_domain="global" view="0295ddc1c3c60b10801139ec05013193">45d48bf7c34e8f10801139ec05013194</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_id>45d48bf7c34e8f10801139ec05013197</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="sysevent_email_action" element="NULL" name="sysevent_email_action" parent="NULL" relationship="NULL" sys_domain="global" view="0295ddc1c3c60b10801139ec05013193">45d48bf7c34e8f10801139ec05013194</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_id>c9d48bf7c34e8f10801139ec05013197</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>recipient_fields</element>
+            <list_id display_value="sysevent_email_action" element="NULL" name="sysevent_email_action" parent="NULL" relationship="NULL" sys_domain="global" view="0295ddc1c3c60b10801139ec05013193">45d48bf7c34e8f10801139ec05013194</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_id>41d48bf7c34e8f10801139ec05013198</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>recipient_users</element>
+            <list_id display_value="sysevent_email_action" element="NULL" name="sysevent_email_action" parent="NULL" relationship="NULL" sys_domain="global" view="0295ddc1c3c60b10801139ec05013193">45d48bf7c34e8f10801139ec05013194</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_id>c5d48bf7c34e8f10801139ec05013198</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>recipient_groups</element>
+            <list_id display_value="sysevent_email_action" element="NULL" name="sysevent_email_action" parent="NULL" relationship="NULL" sys_domain="global" view="0295ddc1c3c60b10801139ec05013193">45d48bf7c34e8f10801139ec05013194</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_id>4dd48bf7c34e8f10801139ec05013198</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="sysevent_email_action" element="NULL" name="sysevent_email_action" parent="NULL" relationship="NULL" sys_domain="global" view="0295ddc1c3c60b10801139ec05013193">45d48bf7c34e8f10801139ec05013194</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_id>89d48bf7c34e8f10801139ec050131a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sysevent_email_action</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-20 05:15:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>45d48bf7c34e8f10801139ec05013194</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sysevent_email_action</sys_name>
+            <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+            <sys_update_name>sys_ui_list_sysevent_email_action_seop</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-20 05:15:03</sys_updated_on>
+            <sys_user/>
+            <view display_value="seop" name="seop">0295ddc1c3c60b10801139ec05013193</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
