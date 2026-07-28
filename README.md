@@ -1,267 +1,491 @@
-# Smart Employee Onboarding Portal
+# 🚀 Smart Employee Onboarding Portal
 
-A custom ServiceNow application that automates employee onboarding using the Service Catalog, Record Producers, Variable Sets, UI Policies, Client Scripts, Flows, and custom tables.
+> A complete end-to-end Employee Onboarding application built on the ServiceNow platform that automates the onboarding lifecycle using Flow Designer, Record Producers, Service Catalog, GlideAjax, Client Scripts, Script Includes, Reports, Dashboards, Notifications, and Role-Based Access Control.
 
----
-
-## Project Overview
-
-The Smart Employee Onboarding Portal streamlines the employee onboarding process by allowing managers to submit onboarding requests through a Service Catalog item.
-
-The application captures employee information, validates user input, dynamically adapts the form based on selections, and (in future phases) automatically generates onboarding tasks for different departments.
+![ServiceNow](https://img.shields.io/badge/Platform-ServiceNow-green)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![Flow Designer](https://img.shields.io/badge/Flow%20Designer-Automated-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
 
-## Features Implemented
+# 📖 Overview
 
-### Custom Tables
+Employee onboarding is often handled manually through emails, spreadsheets, and multiple approval steps, resulting in delays, inconsistent task assignments, and limited visibility into onboarding progress.
 
-- Onboarding Request
-- Onboarding Task
+The **Smart Employee Onboarding Portal** streamlines this process by automating the complete onboarding lifecycle.
 
-Relationship:
-
-Onboarding Request
-└── Multiple Onboarding Tasks
+Managers can submit onboarding requests through a Record Producer. Once approved, the application automatically generates onboarding tasks, assigns them to the appropriate teams, tracks task completion, updates request statuses, sends notifications, and provides real-time analytics through interactive dashboards.
 
 ---
 
-### Security
+# ✨ Key Features
 
-Created custom application roles:
+- Custom Employee Onboarding Application
+- Service Catalog Record Producer
+- Custom Tables
+- Variable Sets
+- Role-Based Access Control (ACLs)
+- Dynamic Client Scripts
+- UI Policies
+- Script Includes
+- GlideAjax
+- Flow Designer Automation
+- HR Approval Workflow
+- Automatic Onboarding Task Creation
+- Automatic Task Assignment
+- Parent Request Lifecycle Management
+- Email Notifications
+- Reports
+- Interactive Dashboard
+
+---
+
+# 🏗️ System Architecture
+
+```text
+                           Employee / Manager
+                                    │
+                                    ▼
+                      Employee Onboarding Record Producer
+                                    │
+                                    ▼
+                        Onboarding Request Record
+                                    │
+                                    ▼
+                   Employee Onboarding Automation Flow
+                                    │
+                    ┌───────────────┴────────────────┐
+                    │                                │
+                    ▼                                ▼
+              HR Approval                     Request Rejected
+                    │
+                    ▼
+         Lookup Active Task Templates
+                    │
+                    ▼
+      Automatically Create Onboarding Tasks
+                    │
+                    ▼
+         Auto Assign Tasks to Team Members
+                    │
+                    ▼
+        Employees Complete Assigned Tasks
+                    │
+                    ▼
+        Onboarding Task Lifecycle Flow
+                    │
+                    ▼
+      Parent Request Automatically Completed
+                    │
+                    ▼
+      Reports & Interactive Analytics Dashboard
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+Smart Employee Onboarding Portal
+│
+├── Automation
+│   ├── Employee Onboarding Automation
+│   ├── Auto Assign Onboarding Task
+│   ├── Onboarding Task Lifecycle
+│   └── Notifications
+│
+├── Client Development
+│   ├── Client Script
+│   └── UI Policy
+│
+├── Server Development
+│   └── Script Include
+│
+├── Data
+│   ├── Onboarding Request
+│   ├── Onboarding Task
+│   └── Onboarding Task Template
+│
+├── Security
+│   ├── Roles
+│   └── ACLs
+│
+├── Reporting
+│   ├── Reports
+│   └── Dashboard
+│
+└── Service Catalog
+    ├── Record Producer
+    └── Variable Sets
+```
+
+---
+
+# 🗃️ Custom Tables
+
+## 1. Onboarding Request
+
+Stores the complete onboarding request submitted by managers.
+
+### Fields
+
+- Employee
+- Employee Name
+- Employee Email
+- Department
+- Location
+- Manager
+- Joining Date
+- Job Role
+- Status
+
+---
+
+## 2. Onboarding Task
+
+Stores every onboarding task created for an employee.
+
+Examples
+
+- Laptop Setup
+- Email Account Creation
+- VPN Configuration
+- ID Card Generation
+- HR Documentation
+
+Each task references its parent onboarding request.
+
+---
+
+## 3. Onboarding Task Template
+
+Reusable templates used for automatic task generation.
+
+Instead of hardcoding tasks inside flows, the application reads all active templates and dynamically creates onboarding tasks.
+
+---
+
+# 🔐 Security
+
+## Roles
 
 - Admin
 - Manager
 - User
 
-Configured Access Control Rules (ACLs) for secure access to application records.
+## Access Control Lists
+
+Custom ACLs secure all application records and ensure only authorized users can create, read, update, or delete onboarding information.
 
 ---
 
-### Service Catalog
+# 📋 Service Catalog
 
-Created:
-
-- Service Catalog Item
-- Employee Onboarding Record Producer
-
-The Record Producer serves as the main entry point for submitting onboarding requests.
+Created an Employee Onboarding Record Producer that acts as the primary entry point for managers to submit onboarding requests.
 
 ---
 
-### Reusable Variable Sets
+# 📦 Variable Sets
 
-Created reusable Variable Sets:
+Reusable variable sets were created for future scalability.
 
 - Employee Details
 - Employment Details
 - Asset Requirements
 - Additional Information
 
-These variable sets can be reused across future catalog items.
+---
+
+# ⚙️ Dynamic Form Behaviour
+
+## Department → Job Role Filtering
+
+Implemented Catalog Client Scripts that dynamically update Job Role choices based on the selected department.
+
+Departments include:
+
+- IT
+- HR
+- Finance
+- Sales
+- Marketing
+- Operations
+
+Each department displays only relevant job roles.
 
 ---
 
-### Employee Details
-
-Implemented variables:
-
-- Employee Name
-- Personal Email
-- Employee Contact Number
-- Manager
-- Requested By
-
----
-
-### Employment Details
-
-Implemented variables:
-
-- Department
-- Job Role
-- Joining Date
-- Work Location
-
----
-
-### Asset Requirements
-
-Implemented variables:
-
-- Laptop Required
-- Laptop Type
-- Required Software
-
----
-
-### Additional Information
-
-Implemented variables:
-
-- Additional Remarks
-
----
-
-## Dynamic Client-Side Logic
-
-Implemented Catalog Client Scripts:
-
-### Department → Job Role Filtering
-
-Selecting a department dynamically updates the available Job Roles.
-
-Examples:
-
-Information Technology
-
-- Software Engineer
-- QA Engineer
-- Cloud Engineer
-- DevOps Engineer
-- ServiceNow Developer
-
-Human Resources
-
-- HR Executive
-- Talent Acquisition
-- HR Manager
-- HR Business Partner
-
-Marketing
-
-- Marketing Executive
-- Digital Marketing Specialist
-- Content Strategist
-- SEO Specialist
-
-Finance
-
-- Accountant
-- Financial Analyst
-- Payroll Specialist
-- Finance Manager
-
-Sales
-
-- Sales Executive
-- Business Development Executive
-- Account Manager
-- Sales Manager
-
-Operations
-
-- Operations Executive
-- Operations Manager
-- Supply Chain Coordinator
-- Logistics Coordinator
-
----
-
-### Laptop Type Visibility
-
-Implemented Catalog UI Policy:
+## Laptop Requirement UI Policy
 
 If
 
+```
 Laptop Required = Yes
+```
 
 Then
 
-Laptop Type becomes:
+- Laptop Type becomes visible
+- Laptop Type becomes mandatory
 
-- Visible
-- Mandatory
-
-Otherwise the field is hidden automatically.
+Otherwise the field is automatically hidden.
 
 ---
 
-## Technologies Used
+# 💻 Client Script + GlideAjax
+
+A custom **onChange Client Script** was developed to automatically populate employee information when an employee is selected.
+
+The Client Script:
+
+- Calls a Script Include using GlideAjax
+- Retrieves employee details
+- Populates multiple fields automatically
+
+Fields populated:
+
+- Employee Name
+- Employee Email
+- Department
+- Location
+- Manager
+
+### Screenshot
+
+![Client Script](images/client-script.png)
+
+---
+
+# 🖥️ Script Include
+
+A reusable GlideAjax-enabled Script Include retrieves employee information from the **sys_user** table and returns JSON data to the client.
+
+The Script Include returns:
+
+- Name
+- Email
+- Department
+- Location
+- Manager
+
+### Screenshot
+
+![Script Include](images/script-include.png)
+
+---
+
+# 🔄 Flow Designer Automation
+
+## 1️⃣ Employee Onboarding Automation
+
+This is the primary automation flow.
+
+### Process
+
+- Trigger when a new onboarding request is created.
+- Update request status.
+- Send approval request.
+- Wait for HR approval.
+- If approved:
+  - Update status.
+  - Lookup active onboarding task templates.
+  - Automatically create onboarding tasks.
+- If rejected:
+  - Update request status to Rejected.
+  - Send rejection notification.
+
+### Screenshot
+
+![Employee Onboarding Flow](images/employee-onboarding-flow.png)
+
+---
+
+## 2️⃣ Auto Assign Onboarding Task
+
+Automatically assigns newly created onboarding tasks.
+
+Process:
+
+- Trigger when task is created.
+- Lookup assignment group members.
+- Select an available member.
+- Assign task automatically.
+
+No manual assignment is required.
+
+### Screenshot
+
+![Auto Assign Flow](images/auto-assign-flow.png)
+
+---
+
+## 3️⃣ Onboarding Task Lifecycle
+
+Tracks completion of all onboarding tasks.
+
+Whenever a task is closed:
+
+- Lookup remaining tasks.
+- If no pending tasks exist:
+  - Automatically update parent onboarding request.
+  - Set onboarding request status to **Completed**.
+
+### Screenshot
+
+![Lifecycle Flow](images/onboarding-task-lifecycle.png)
+
+---
+
+# 📧 Notifications
+
+Automated notifications are configured for important onboarding events.
+
+Examples include:
+
+- Approval Requests
+- Approval Confirmation
+- Request Rejection
+- Onboarding Completion
+
+---
+
+# 📊 Reports
+
+Four analytical reports were created.
+
+## Onboarding Requests by Status
+
+Displays request distribution by status.
+
+- Approved
+- Pending HR Approval
+- Completed
+- Rejected
+
+---
+
+## Employees by Department
+
+Displays employee onboarding requests grouped by department.
+
+---
+
+## Onboarding Requests by Job Role
+
+Shows onboarding distribution across job roles.
+
+---
+
+## Onboarding Tasks by State
+
+Displays onboarding task progress.
+
+---
+
+# 📈 Interactive Dashboard
+
+An interactive dashboard was created using Platform Analytics to provide real-time visibility into onboarding activities.
+
+Dashboard includes:
+
+- Onboarding Requests by Status
+- Employees by Department
+- Onboarding Requests by Job Role
+- Onboarding Tasks by State
+
+### Screenshot
+
+![Dashboard](images/dashboard.png)
+
+---
+
+# 📝 Onboarding Request Form
+
+The onboarding request form automatically populates employee details and captures all required onboarding information.
+
+### Screenshot
+
+![Onboarding Request](images/onboarding-request-form.png)
+
+---
+
+# 🛠️ Technologies Used
 
 - ServiceNow Studio
+- Flow Designer
 - Service Catalog
 - Record Producer
 - Variable Sets
-- Catalog Client Scripts
-- Catalog UI Policies
-- Access Control Rules (ACLs)
-- Custom Tables
-
----
-
-## Current Project Status
-
-Completed
-
-- Data Model
-- Custom Tables
-- Roles
-- ACLs
-- Record Producer
-- Variable Sets
-- Dynamic Form Behaviour
-- Department-based Job Role Filtering
-- Laptop Visibility Logic
-
-In Progress
-
-- Flow Designer Automation
-
-Planned
-
-- Automatic Task Creation
-- Conditional Task Assignment
-- Request Lifecycle Automation
+- Client Scripts
+- UI Policies
+- Script Includes
+- GlideAjax
 - Notifications
-- Dashboard & Reports
+- Custom Tables
+- Reports
+- Platform Analytics Dashboard
+- ACLs
+- Roles
 
 ---
 
-## 📂 Project Structure
+# 🎯 Skills Demonstrated
 
-```text
-Smart Employee Onboarding Portal
-│
-├── 📁 Data Model
-│   ├── Onboarding Request
-│   └── Onboarding Task
-│
-├── 👥 Security
-│   ├── Admin Role
-│   ├── Manager Role
-│   ├── User Role
-│   └── Access Control Lists (ACLs)
-│
-├── 📋 Request Management
-│   ├── Employee Onboarding Record Producer
-│   ├── Employee Details (Variable Set)
-│   ├── Employment Details (Variable Set)
-│   ├── Asset Requirements (Variable Set)
-│   └── Additional Information (Variable Set)
-│
-├── ⚡ Client-side Logic
-│   ├── Catalog Client Scripts
-│   │   ├── Department → Job Role Filtering
-│   │   └── Dynamic Job Role Population
-│   │
-│   └── Catalog UI Policies
-│       └── Show/Hide Laptop Type
-│
-├── 🔄 Workflow Automation (Upcoming)
-│   ├── Flow Designer
-│   ├── HR Approval
-│   ├── Automatic Task Creation
-│   ├── Conditional Task Assignment
-│   ├── Status Management
-│   └── Notifications
-│
-└── 📊 Analytics (Planned)
-    ├── Reports
-    └── Dashboard
-```
-│
-├── UI Policies
-│   └── Laptop Required → Laptop Type
-│
-└── Flow Designer (Upcoming)
+- ServiceNow Application Development
+- Workflow Automation
+- Flow Designer
+- Service Catalog Development
+- Record Producer Development
+- Client-side Scripting
+- Server-side Scripting
+- GlideAjax
+- Custom Tables
+- Access Control
+- Reporting
+- Dashboard Development
+- Process Automation
+
+---
+
+# 🚀 Future Enhancements
+
+- Service Portal Integration
+- Virtual Agent Support
+- SLA Management
+- IntegrationHub APIs
+- HRSD Integration
+- Document Generation
+- Electronic Signature
+- Employee Welcome Kit Automation
+- AI-powered onboarding recommendations
+
+---
+
+# 📸 Screenshots
+
+| Feature | Screenshot |
+|----------|------------|
+| Dashboard | `images/dashboard.png` |
+| Onboarding Request Form | `images/onboarding-request-form.png` |
+| Employee Onboarding Flow | `images/employee-onboarding-flow.png` |
+| Auto Assign Flow | `images/auto-assign-flow.png` |
+| Onboarding Task Lifecycle | `images/onboarding-task-lifecycle.png` |
+| Client Script | `images/client-script.png` |
+| Script Include | `images/script-include.png` |
+
+---
+
+# 👨‍💻 Author
+
+**Tanmay Sawant**
+
+B.Tech Computer Science Engineering
+
+ServiceNow Certified System Administrator (CSA)
+
+ServiceNow Certified Application Developer (CAD)
+
+---
+
+## ⭐ If you found this project interesting, consider giving it a star!
