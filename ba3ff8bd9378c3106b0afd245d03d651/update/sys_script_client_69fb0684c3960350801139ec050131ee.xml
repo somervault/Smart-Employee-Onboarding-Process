@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>employee</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Populate Employee Details</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    var ga = new GlideAjax('PopulateEmployeeDetails');
+    ga.addParam('sysparm_name', 'getEmployeeDetails');
+    ga.addParam('sysparm_user', newValue);
+
+    ga.getXMLAnswer(function(response) {
+
+        var data = JSON.parse(response);
+
+        g_form.setValue('employee_name', data.name);
+        g_form.setValue('employee_email', data.email);
+        g_form.setValue('department', data.department);
+
+    });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-20 19:46:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>69fb0684c3960350801139ec050131ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Populate Employee Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
+        <sys_update_name>sys_script_client_69fb0684c3960350801139ec050131ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-20 19:52:26</sys_updated_on>
+        <table>x_1920004_smart_0_onboarding_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
