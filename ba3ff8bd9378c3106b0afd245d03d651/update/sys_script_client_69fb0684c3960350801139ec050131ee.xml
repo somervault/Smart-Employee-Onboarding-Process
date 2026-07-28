@@ -26,6 +26,8 @@
         g_form.setValue('employee_name', data.name);
         g_form.setValue('employee_email', data.email);
         g_form.setValue('department', data.department);
+		g_form.setValue('location', data.location);
+		g_form.setValue('manager', data.manager);
 
     });
 }]]></script>
@@ -35,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>69fb0684c3960350801139ec050131ee</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Populate Employee Details</sys_name>
         <sys_overrides/>
         <sys_package display_value="Smart Employee Onboarding Portal" source="x_1920004_smart_0">ba3ff8bd9378c3106b0afd245d03d651</sys_package>
@@ -43,7 +45,7 @@
         <sys_scope display_value="Smart Employee Onboarding Portal">ba3ff8bd9378c3106b0afd245d03d651</sys_scope>
         <sys_update_name>sys_script_client_69fb0684c3960350801139ec050131ee</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-20 19:52:26</sys_updated_on>
+        <sys_updated_on>2026-07-28 06:22:10</sys_updated_on>
         <table>x_1920004_smart_0_onboarding_request</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
